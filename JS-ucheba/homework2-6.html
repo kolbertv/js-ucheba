@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),</title>
+</head>
+<body>
+<script>
+    "use strict";
+
+    function summTwoParam(firstParam, secondParam) {
+        return firstParam + secondParam;
+    }
+
+    function multiplyTwoParam(firstParam, secondParam) {
+        return firstParam * secondParam;
+    }
+
+    function devideTwoParam(firstParam, secondParam) {
+        return firstParam / secondParam;
+    }
+
+    function differenceTwoParam(firstParam, secondParam) {
+        return firstParam - secondParam;
+    }
+
+
+    function mathOperation(firstParam, secondParam, operation) {
+        let retriveOperation = null;
+        switch (operation) {
+            case "summ":
+                retriveOperation = summTwoParam(firstParam, secondParam);
+                break;
+            case "devide":
+                retriveOperation = devideTwoParam(firstParam, secondParam);
+                break;
+            case "multiply":
+                retriveOperation = multiplyTwoParam(firstParam, secondParam);
+                break;
+            case "difference":
+                retriveOperation = differenceTwoParam(firstParam, secondParam);
+                break;
+
+        }
+        return retriveOperation;
+    }
+
+    console.log(mathOperation(1, 2, "summ"));
+    console.log(mathOperation(1, 2, "devide"));
+    console.log(mathOperation(1, 2, "multiply"));
+    console.log(mathOperation(1, 2, "difference"));
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Объявить две переменные a и b и задать им целочисленные произвольные начальные значения</title>
+</head>
+<body>
+<script>
+    "use sctrict";
+    let a = 1, b = -3;
+    if (a >= 0 && b >= 0) {
+        console.log(`${a - b} разность`);
+    } else if (a < 0 && b < 0) {
+        console.log(`${a * b} умножение`);
+    } else if ((a <= 0 && b >= 0) || (a >= 0 && b <= 0)) {
+        console.log(`${a + b} сложение`);
+    }
+    console.log(`вы попали в никуда`);
+</script>
+</body>
+</html>

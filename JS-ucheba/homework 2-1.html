@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Объясните почему код даёт именно такие результаты?</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+    let a = 1, b = 1, c, d;
+    c = ++a; // тут а стала 2
+    alert(c);
+    console.log(`${c} сначала прибавляется потом присваивается`);
+    d = b++; // тут b  стала 2
+    alert(d);
+    console.log(`${d} сначала присваивается потом прибавляется`);
+    c = 2 + ++a; // тут а стала 3
+    alert(c);
+    console.log(`${c} а была 2 стала 3 и прибавилась к 2`);
+    d = 2 + b++; //тут b стала 3
+    alert(d);
+    console.log(`${d} к 2 прибавила 2 от b и b увеличиалсь на 1`);
+    alert(a);
+    alert(b);
+</script>
+</body>
+</html>
