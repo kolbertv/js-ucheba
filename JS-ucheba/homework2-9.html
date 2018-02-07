@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Программа должна спросить у пользователя количество денег</title>
+</head>
+<body>
+
+
+<script>
+    "use strict";
+    let getMoney = prompt('Введите кол-во денег, целое число');
+    let getMoneySplit = getMoney.split("");
+    if (isNaN(getMoney) || Math.round(getMoney) != getMoney) {
+        alert("это не число или не целое число");
+    } else if (((getMoneySplit.length == 2 && getMoneySplit[0] == 1))) {
+        alert(`${getMoney} рублей`);
+    } else {
+
+        switch (getMoneySplit[getMoneySplit.length - 1]) {
+            case "1":
+                alert(`${getMoney} рубль`);
+                break;
+            case "2":
+                alert(`${getMoney} рубля`);
+                break;
+            case "3":
+                alert(`${getMoney} рубля`);
+                break;
+            case "4":
+                alert(`${getMoney} рубля`);
+                break;
+            case "5":
+                alert(`${getMoney} рублей`);
+                break;
+            case "6":
+                alert(`${getMoney} рублей`);
+                break;
+            case "7":
+                alert(`${getMoney} рублей`);
+                break;
+            case "8":
+                alert(`${getMoney} рублей`);
+                break;
+            case "9":
+                alert(`${getMoney} рублей`);
+                break;
+            case "0":
+                alert(`${getMoney} рублей`);
+                break;
+        }
+    }
+</script>
+
+</body>
+</html>
