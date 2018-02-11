@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Дан массив (создать такой же</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    let arr = [[2, 4, 6], [1, 5, 10], [7, 4, 1]];
+
+    let summResult = [0, 0, 0];
+    for (let i = 0; i <= 2; i++) {
+
+        for (let j = 0; j <= 2; j++) {
+            summResult[i] = summResult[i] + arr[i][j];
+        }
+    }
+
+    if (summResult[0] > summResult[1]) {
+        if (summResult[0] > summResult[2]) {
+            console.log(`1 сумма массива самая большая и равенн ${summResult[0]}`);
+        } else {
+            console.log(`3 сумма массива самая большая и равенн ${summResult[2]}`);
+        }
+    } else if (summResult[1] > summResult[2]) {
+        console.log(`2 сумма массива самая большая и равенн ${summResult[1]}`);
+    } else {
+        console.log(`3 сумма массива самая большая и равенн ${summResult[2]}`);
+    }
+
+
+
+
+</script>
+
+
+</body>
+</html>

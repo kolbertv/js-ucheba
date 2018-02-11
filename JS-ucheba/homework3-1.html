@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>С помощью цикла while вывести все простые числа в промежутке от 0 до 100 </title>
+</head>
+<body>
+
+<script>
+    "use sctrict";
+
+    let i = 3, remainder = false;
+    while (i <= 100) {
+        let j = 2;
+        while (j < i) {
+
+            if (i % j == 0) {
+                remainder = true;
+                break;
+            }
+            j = j + 1;
+        }
+        if (!remainder) {
+            console.log(i);
+        } else  {
+            remainder = false;
+        }
+        i = i + 1;
+    }
+
+</script>
+
+
+</body>
+</html>

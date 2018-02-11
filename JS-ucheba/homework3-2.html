@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>С помощью цикла do…while написать алгоритм для вывода чисел от 0 до 10</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    let i = 1;
+
+    do {
+
+        if (i / 2 === Math.round(i / 2)) {
+            console.log(`${i} четное число`);
+        } else {
+            console.log(`${i} нечетное число`);
+        }
+
+        i = i + 1;
+    } while (i <= 10);
+
+
+</script>
+
+
+</body>
+</html>
