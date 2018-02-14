@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Написать функцию, преобразующую число в объект. </title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    let getDigit = prompt("Введите число от 0 до 999");
+    if (isNaN(parseInt(getDigit))) {
+        console.log("Не число");
+    } else if (getDigit.split("").length > 3) {
+        console.log("вы ввели слишком длинное число");
+    } else if (getDigit != Math.round(getDigit)) {
+        console.log("вы введи не целое число");
+    } else if (getDigit == 0) {
+        let digitObject = {};
+        console.log(digitObject);
+    } else {
+        /**
+         * создание объекта для хранение чисел
+         * @type {{}}
+         */
+        let digitObject = {};
+        let arrDigits = getDigit.split("");
+        /**
+         * Создание свойств в объекте и просвоение им значений
+         */
+//        switch (getDigit.split("").length) {
+//            case 3:
+//                digitObject.firstDigit = arrDigits[0];
+//                digitObject.secondDigit = arrDigits[1];
+//                digitObject.thirdDigit = arrDigits[2];
+//                break;
+//            case 2:
+//                digitObject.firstDigit = arrDigits[0];
+//                digitObject.secondDigit = arrDigits[1];
+//                break;
+//            case 1:
+//                digitObject.firstDigit = arrDigits[0];
+//                break
+//        }
+
+        let arrLegth = getDigit.split("").length;
+        if (arrLegth != 0) {
+            digitObject.firstDigit = arrDigits[0];
+            arrLegth = arrLegth - 1;
+        }
+
+        if (arrLegth != 0) {
+            digitObject.secondDigit = arrDigits[1];
+            arrLegth = arrLegth - 1;
+        }
+
+        if (arrLegth != 0) {
+            digitObject.thirdDigit = arrDigits[2];
+        }
+
+        /**
+         * Ненравятся мне оба способа выглядят как говнокод.
+         */
+
+        console.log(digitObject);
+    }
+</script>
+
+</body>
+</html>
