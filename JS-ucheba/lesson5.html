@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div id="test-id">
+    <h1>test</h1>
+    <div class="test-class">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, provident!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, provident!</p>
+    </div>
+    <div class="test-class">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, provident!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, provident!</p>
+    </div>
+</div>
+
+<script>
+    "use strict";
+
+    let myDiv = document.createElement('div');
+    let myContent = document.createTextNode('текст внутри');
+    myDiv.appendChild(myContent);
+    document.body.appendChild(myDiv);
+
+
+</script>
+</body>
+</html>
