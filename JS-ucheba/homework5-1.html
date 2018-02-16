@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Создать функцию, генерирующую шахматную доску</title>
+</head>
+<body>
+
+<table id="chessDesk"></table>
+
+
+<script>
+    "use strict";
+
+    let containerChessDesk = document.getElementById('chessDesk');
+    containerChessDesk.style = 'border: 2px solid black;';
+
+
+
+    /**
+     * Функция создания шахматной доски с произвольным кол-вом столбцов и строк
+     * @param x - количество клеток по горизонтали
+     * @param y - количество клеток по вертикали
+     */
+    function renderChessDesk(x, y) {
+        for (let row = 0; row < y; row++) {
+            let rowElem = document.createElement('tr');
+            containerChessDesk.appendChild(rowElem);
+            for (let col = 0; col < x; col++) {
+                let colElem = document.createElement('td');
+                if ((row % 2) !== 0 && (col % 2 === 0)) {
+                    colElem.style = 'width: 20px; height:20px; background-color: gray;';
+                } else { colElem.style = 'width: 20px; height:20px; background-color: azure;';};
+                if ((row % 2) === 0 && (col % 2 !== 0)) {
+                    colElem.style = 'width: 20px; height:20px; background-color: gray;';
+                }
+
+
+
+                containerChessDesk.appendChild(colElem);
+            }
+        }
+    }
+
+    renderChessDesk(8, 8);
+
+</script>
+
+
+</body>
+</html>
