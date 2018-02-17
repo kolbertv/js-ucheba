@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Создать функцию, генерирующую шахматную доску</title>
+
+    <style type="text/css">
+
+    </style>
+
 </head>
 <body>
+
+
+<table id='chessDeskNumbers'></table>
+
+<table id='chessDeskLetter'></table>
 
 <table id="chessDesk"></table>
 
@@ -12,40 +22,139 @@
 <script>
     "use strict";
 
-    let containerChessDesk = document.getElementById('chessDesk');
-    containerChessDesk.style = 'border: 2px solid black;';
+    /**
+     *  s: размер клеток шахматной доски
+     *  color: цвет темных клеток
+     * */
+    let chessCell = {
+        s: '60px;',
+        color: 'gray',
+    };
 
-
+    let arrPiecesCollect = [];
+    for (let i = 0; i < 8; i++) {
+        arrPiecesCollect[i] = [];
+        for (let j = 0; j < 8; j++) {
+            arrPiecesCollect[i][j] = 0;
+        }
+    }
 
     /**
-     * Функция создания шахматной доски с произвольным кол-вом столбцов и строк
-     * @param x - количество клеток по горизонтали
-     * @param y - количество клеток по вертикали
+     * задание стартового положегния фигур и название фигур
      */
-    function renderChessDesk(x, y) {
-        for (let row = 0; row < y; row++) {
-            let rowElem = document.createElement('tr');
-            containerChessDesk.appendChild(rowElem);
-            for (let col = 0; col < x; col++) {
-                let colElem = document.createElement('td');
-                if ((row % 2) !== 0 && (col % 2 === 0)) {
-                    colElem.style = 'width: 20px; height:20px; background-color: gray;';
-                } else { colElem.style = 'width: 20px; height:20px; background-color: azure;';};
-                if ((row % 2) === 0 && (col % 2 !== 0)) {
-                    colElem.style = 'width: 20px; height:20px; background-color: gray;';
+    function piecessInit() {
+        let rookW = '&#9814';
+        let rookB = '&#9820';
+        let knightB = '&#9822';
+        let knightW = '&#9816';
+        let bishopB = '&#9821';
+        let bishopW = '&#9815';
+        let queenB = '&#9819';
+        let queenW = '&#9813';
+        let kingB = '&#9818';
+        let kingW = '&#9812';
+        let pawnB = '&#9823';
+        let pawnW = '&#9817';
+        let arrPieces = [
+            [rookW, knightW, bishopW, kingW, queenW, pawnW],
+            [rookB, knightB, bishopB, kingB, queenB, pawnB]
+        ];
+
+        for (let i = 0; i < 5; i++) {
+            arrPiecesCollect[0][i] = arrPieces[0][i];
+            arrPiecesCollect[7][i] = arrPieces[1][i];
+        }
+        for (let i = 0; i < 8; i++) {
+            arrPiecesCollect[1][i] = arrPieces[0][5];
+            arrPiecesCollect[6][i] = arrPieces[1][5];
+        }
+        arrPiecesCollect[0][5] = arrPieces[0][2];
+        arrPiecesCollect[0][6] = arrPieces[0][1];
+        arrPiecesCollect[0][7] = arrPieces[0][0];
+        arrPiecesCollect[7][5] = arrPieces[1][2];
+        arrPiecesCollect[7][6] = arrPieces[1][1];
+        arrPiecesCollect[7][7] = arrPieces[1][0];
+    }
+
+    /**
+     * сооздание и вывод доски
+     */
+    function renderChessDesk() {
+        let containerChessDesk = document.getElementById('chessDesk');
+        containerChessDesk.style = 'border: 1px solid black;';
+        for (let row = 0; row < 8; row++) {
+            let trElem = document.createElement('tr');
+            containerChessDesk.appendChild(trElem);
+            for (let col = 0; col < 8; col++) {
+                let tdElem = document.createElement('td');
+                tdElem.style = 'width:' + chessCell.s + 'height:' + chessCell.s + 'text-align:center; font-size:2.0em;';
+                trElem.appendChild(tdElem);
+                if (((row % 2) === 0 && ((col % 2) !== 0)) || ((row % 2) !== 0 && ((col % 2) === 0))) {
+                    tdElem.style.backgroundColor = chessCell.color;
                 }
+            }
+        }
 
+        let containerChessDeskNumbers = document.getElementById('chessDeskNumbers');
+        containerChessDeskNumbers.style = 'float:left;';
+        for (let row = 0; row < 8 + 1; row++) {
+            let trElem = document.createElement('tr');
+            containerChessDeskNumbers.appendChild(trElem);
+            let tdElem = document.createElement('td');
+            trElem.appendChild(tdElem);
+            tdElem.style = 'width:' + chessCell.s + 'height:' + chessCell.s + 'text-align: center;';
+            if (row !== 0) {
+                tdElem.textContent = row;
+            }
+        }
 
+        let containerChessDeskLetters = document.getElementById('chessDeskLetter');
+        let trElem = document.createElement('tr');
+        containerChessDeskLetters.appendChild(trElem);
+        let stringWord = 'абвгдеёжзиклмнопрстуфхцчщэюя';
+        let stringLetter = stringWord.split('');
+        for (let col = 0; col < 8; col++) {
+            let tdElem = document.createElement('td');
+            trElem.appendChild(tdElem);
+            tdElem.style = 'width:' + chessCell.s + 'height:' + chessCell.s + 'text-align: center;';
+            tdElem.textContent = stringLetter[col];
+        }
+    }
 
-                containerChessDesk.appendChild(colElem);
+    /**
+     * вывод фигур на доску, курсор и тень у фигур, кликание
+     */
+    function piecesRender() {
+        let containerChessDesk = document.getElementById('chessDesk');
+        let trElem = containerChessDesk.querySelectorAll("tr");
+        for (let i = 0; i < 8; i++) {
+            for (let j = 0; j < 8; j++) {
+                if (arrPiecesCollect[i][j]) {
+                    trElem[i].children[j].innerHTML = '<span>' + arrPiecesCollect[i][j] + '</span>';
+                    trElem[i].children[j].querySelector('span').onmouseover = function () {
+                        this.style.cursor = "pointer";
+                        this.style.textShadow = "1px 1px 2px black, 0 0 1em red";
+                        this.style.fontSize = '1.3em';
+                        trElem[i].children[j].querySelector('span').onmouseout = function () {
+                            this.style.textShadow = "none";
+                            this.style.fontSize = '1.0em';
+                        }
+                        trElem[i].children[j].querySelector('span').onmousedown = function () {
+                            this.style.fontSize = '1.0em';
+                        }
+                        trElem[i].children[j].querySelector('span').onmouseup = function () {
+                            this.style.fontSize = '1.3em';
+                        }
+                    }
+                }
             }
         }
     }
 
-    renderChessDesk(8, 8);
+    renderChessDesk();
+    piecessInit();
+    piecesRender();
 
 </script>
-
-
 </body>
 </html>

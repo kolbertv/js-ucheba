@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Создать форму в html </title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    let containerBody = document.querySelector('body');
+    let formElem = document.createElement('form');
+    let textElem = document.createElement('input');
+    let textElemP = document.createElement('p');
+    let phoneElem = document.createElement('input');
+    let phoneElemP = document.createElement('p');
+    let passwordElem = document.createElement('input');
+    let passwordElemP = document.createElement('p');
+    let passworRepeatdElem = document.createElement('input');
+    let passworRepeatdElemP = document.createElement('p');
+    let submitElem = document.createElement('input');
+
+    containerBody.appendChild(formElem);
+    formElem.appendChild(textElem);
+    formElem.appendChild(textElemP);
+    formElem.appendChild(phoneElem);
+    formElem.appendChild(phoneElemP);
+    formElem.appendChild(passwordElem);
+    formElem.appendChild(passwordElemP);
+    formElem.appendChild(passworRepeatdElem);
+    formElem.appendChild(passworRepeatdElemP);
+    formElem.appendChild(submitElem);
+
+    textElem.type = 'text';
+    phoneElem.type = 'text';
+    passwordElem.type = 'password';
+    passworRepeatdElem.type = 'password';
+    submitElem.type = 'submit';
+
+    textElem.placeholder = "Имя от 1 до 50 символов";
+    phoneElem.placeholder = 'Телефон 11 чисел';
+    passwordElem.placeholder = 'Пароль от 3 до 50 символов';
+    passworRepeatdElem.placeholder = 'Повторите пароль';
+    textElem.style.width = "inherit";
+    phoneElem.style.width = "inherit";
+    passwordElem.style.width = "inherit";
+    passworRepeatdElem.style.width = "inherit";
+
+    formElem.style = 'border: 1px solid black; width:200px;  padding: 20px;';
+    textElemP.style = 'font-size: 10px; height: 2px; color: red; margin-top:0; margin-bottom:15px; visibility:hidden;';
+    phoneElemP.style = 'font-size: 10px; height: 2px; color: red; margin-top:0; margin-bottom:15px;visibility:hidden;';
+    passwordElemP.style = 'font-size: 10px; height: 2px; color: red; margin-top:0; margin-bottom:15px;visibility:hidden;';
+    passworRepeatdElemP.style = 'font-size: 10px; height: 2px; color: red; margin-top:0; margin-bottom:15px;visibility:hidden;';
+
+    submitElem.onclick = function () {
+
+        let arrTextElemValue = textElem.value.split('');
+        textElemP.style.visibility = 'visible';
+        if ((arrTextElemValue.length < 1)) {
+            textElemP.textContent = 'Вы не ввели имя';
+        } else if (arrTextElemValue.length > 50) {
+            textElemP.textContent = 'Вы ввели имя длиньше 50 символов';
+        } else {
+            textElemP.style.visibility = 'hidden';
+        }
+
+        let arrPhoneElemValue = phoneElem.value.split('');
+        phoneElemP.style.visibility = 'visible';
+        if (arrPhoneElemValue.length < 1) {
+            phoneElemP.textContent = 'Вы не ввели номер телефона';
+        } else if (isNaN(phoneElem.value)) {
+            phoneElemP.textContent = 'Вы ввели не число';
+        } else if (parseInt(phoneElem.value) !== Math.round(phoneElem.value)) {
+            phoneElemP.textContent = 'Вы ввели не целое число';
+        } else if (arrPhoneElemValue.length !== 11) {
+            phoneElemP.textContent = 'Телефон должен быть 11 цифр';
+        } else {
+            phoneElemP.style.visibility = 'hidden';
+        }
+
+        let arrPasswordElemValue = passwordElem.value.split('');
+        passwordElemP.style.visibility = 'visible';
+        if (arrPasswordElemValue.length < 3) {
+            passwordElemP.textContent = 'слишком короткий пароль';
+        } else if (arrPasswordElemValue.length > 50) {
+            passwordElemP.textContent = 'слишком длинный пароль';
+        } else {
+            passwordElemP.style.visibility = 'hidden';
+        }
+
+        if (passworRepeatdElem.value !== passwordElem.value) {
+            passworRepeatdElemP.style.visibility = 'visible';
+            passworRepeatdElemP.textContent = 'Пароль не совпадает';
+        } else {
+            passworRepeatdElemP.style.visibility = 'hidden';
+        }
+
+        let pElem = document.querySelectorAll('p');
+        let isVisible = 0;
+        for (let i = 0; i < pElem.length; i++) {
+
+            if (pElem[i].style.visibility === 'visible') {
+                isVisible = true;
+            }
+        }
+
+        if (isVisible) {
+            console.log('Не отправилось, в форме ошибки');
+            return false;
+        } else {
+            console.log('Данные отправлены');
+            return false;
+        }
+    }
+
+</script>
+</body>
+</html>
