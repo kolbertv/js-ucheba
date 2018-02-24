@@ -1,0 +1,22 @@
+body {
+    width: 700px;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.containerItems {
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+}
+
+.item > img {
+    width: inherit;
+}

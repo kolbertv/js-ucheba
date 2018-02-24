@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>корзина</title>
+</head>
+<body>
+
+<div class="containerItems">
+    <div class="item">
+        <img src="img/sony.jpg" alt="">
+        <div><span>Цена</span><span> 150р</span></div>
+        <button  data-price="150">Купить</button>
+    </div>
+    <div class="item">
+        <img src="img/sony.jpg" alt="">
+        <div><span>Цена</span><span> 250р</span></div>
+        <button data-price="250">Купить</button>
+    </div>
+    <div class="item">
+        <img src="img/sony.jpg" alt="">
+        <div><span>Цена</span><span> 350р</span></div>
+        <button  data-price="350">Купить</button>
+    </div>
+</div>
+
+<div class="cart">
+    <p >Кол-во товаров: <span id="summGoods"></span></p>
+    <p >Итоговая стоимость товаров: <span id="summPrice"></span></p>
+</div>
+
+
+<script src="js.js"></script>
+</body>
+</html>
