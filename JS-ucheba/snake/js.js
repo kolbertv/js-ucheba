@@ -63,13 +63,38 @@ const snake = {
         // Возвращаем точку, где окажется голова змейки в зависимости от направления.
         switch (this.direction) {
             case 'up':
-                return {x: firstPoint.x, y: firstPoint.y - 1};
+
+                if (firstPoint.y < 1) {
+                    return {x: firstPoint.x, y: settings.rowsCount - 1};
+                } else {
+                    return {x: firstPoint.x, y: firstPoint.y - 1};
+                }
+
             case 'down':
-                return {x: firstPoint.x, y: firstPoint.y + 1};
+
+                if (firstPoint.y >= settings.rowsCount - 1) {
+                    return {x: firstPoint.x, y: 0};
+                } else {
+                    return {x: firstPoint.x, y: firstPoint.y + 1};
+
+                }
+
             case 'right':
-                return {x: firstPoint.x + 1, y: firstPoint.y};
+
+                if (firstPoint.x >= settings.colsCount - 1) {
+                    return {x: 0, y: firstPoint.y};
+                } else {
+                    return {x: firstPoint.x + 1, y: firstPoint.y};
+                }
+
             case 'left':
-                return {x: firstPoint.x - 1, y: firstPoint.y};
+
+                if (firstPoint.x < 1) {
+                    return {x: settings.colsCount - 1, y: firstPoint.y};
+                } else {
+                    return {x: firstPoint.x - 1, y: firstPoint.y};
+                }
+
         }
     },
 
@@ -317,6 +342,8 @@ const game = {
         this.food.setFoodCoordinates(this.getRandomCoordinates());
         // Отображаем все что нужно для игры.
         this.render();
+        snake.score=0;
+        this.setScore(snake.score);
     },
 
     /**
@@ -369,7 +396,8 @@ const game = {
             // Прибавляем к змейке ячейку.
             this.snake.incrementBody();
             // Прибавляем очки
-            this.setScore();
+            snake.score = snake.score+1;
+            this.setScore(snake.score);
             // Ставим еду в свободную ячейку.
             this.food.setFoodCoordinates(this.getRandomCoordinates());
             // Если выиграли, завершаем игру.
@@ -384,10 +412,10 @@ const game = {
         this.render();
     },
 
-    setScore() {
-        snake.score = snake.score + 1;
-        let score = document.getElementById('scoreNumber')
-        score.innerText = snake.score;
+    setScore(score) {
+        // snake.score = snake.score + 1;
+        let scoreId = document.getElementById('scoreNumber');
+        scoreId.innerText = score;
     },
 
 
@@ -548,11 +576,13 @@ const game = {
         // Получаем следующую точку головы змейки в соответствии с текущим направлением.
         const nextHeadPoint = this.snake.getNextStepHeadPoint();
         // Змейка может сделать шаг если следующая точка не на теле змейки и точка внутри игрового поля.
-        return !this.snake.isBodyPoint(nextHeadPoint) &&
-            nextHeadPoint.x < this.settings.colsCount &&
-            nextHeadPoint.y < this.settings.rowsCount &&
-            nextHeadPoint.x >= 0 &&
-            nextHeadPoint.y >= 0;
+        return !this.snake.isBodyPoint(nextHeadPoint)
+            // &&
+            // nextHeadPoint.x < this.settings.colsCount &&
+            // nextHeadPoint.y < this.settings.rowsCount &&
+            // nextHeadPoint.x >= 0 &&
+            // nextHeadPoint.y >= 0
+            ;
     },
 };
 
