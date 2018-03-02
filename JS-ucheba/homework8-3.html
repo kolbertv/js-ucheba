@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Программист решил сделать с помощью цикла for массив из функций, которые выводили бы цифры по порядку</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    /**
+     * Исходные данные что должно получится
+     */
+    let arr1 = [
+        function () {
+            console.log(0);
+        },
+        function () {
+            console.log(1);
+        },
+        function () {
+            console.log(2);
+        },
+    ];
+
+    console.log(arr1[0]());
+    console.log(arr1[1]());
+    console.log(arr1[2]());
+
+
+    /**
+     * Решение домашки ES6
+     */
+    let arr2 = [];
+    for (let i = 0; i < 3; i++) {
+
+        arr2.push(function () {
+            console.log(i);
+
+        });
+    }
+    console.log(arr2[0]());
+    console.log(arr2[1]());
+    console.log(arr2[2]());
+
+
+    /**
+     * реализация через замыкание без ES6
+     */
+
+    var arr3 = [];
+    function addArr(i) {
+     return ()=> {console.log(i);}
+    }
+
+    for (var i = 0; i < 3; i++) {
+
+        arr3.push(addArr(i));
+    }
+
+    console.log(arr3[0]());
+    console.log(arr3[1]());
+    console.log(arr3[2]());
+
+
+</script>
+
+
+</body>
+</html>
