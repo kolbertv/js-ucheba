@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <script>
+        function Menu(myId, myClass, myItems) {
+            this.id = myId;
+            this.className = myClass;
+            this.items = myItems;
+        }
+
+        Menu.prototype.render = function () {
+            var result = '<ul class="' + this.className + '" id="' + this.id + '">';
+
+            for (var i = 0; i < this.items.length; i++) {
+                //Проверка на пункт
+                if (this.items[i] instanceof MenuItem) {
+                    result += this.items[i].renderItem();
+                }
+            }
+
+            result += '</ul>';
+            return result;
+        };
+
+        Menu.prototype.remove = function () {
+            const menuItem = document.getElementById(this.id).querySelectorAll('li');
+            document.getElementById(this.id).removeChild(menuItem[menuItem.length-1]);
+        };
+
+        function MenuItem(href, title) {
+            this.href = href;
+            this.title = title;
+        }
+
+        MenuItem.prototype.renderItem = function () {
+            return '<li><a href="' + this.href + '">' + this.title + '</a></li>';
+        };
+
+        window.onload = function () {
+            var menuContainer = document.getElementById('menu');
+
+            var menu1 = new Menu('my', 'my', [
+                new MenuItem('/', 'Главная страница'),
+                new Menu('my1','my1', [
+                    new MenuItem('submenu', 'подменю'),
+                    new MenuItem('submenu', 'подменю'),
+                    new MenuItem('submenu', 'подменю')
+                ]),
+                new MenuItem('/about/', 'О нас'),
+                new MenuItem('/contacts/', 'Контакты'),
+                new MenuItem('/blog/', 'Блог')
+            ]);
+
+            menuContainer.innerHTML = menu1.render();
+//            console.log(menu1.render());
+
+            document.getElementById("deleteMenuItem").addEventListener('click', menu1.remove.bind(menu1));
+        };
+    </script>
+</head>
+<body>
+<div id="menu"></div>
+<button id="deleteMenuItem">удалить последний пункт меню</button>
+</body>
+</html>

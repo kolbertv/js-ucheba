@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1</title>
+    <script>
+        //'use strict';
+        var user = {
+            name: 'Anna',
+            email: '1@2.ru',
+            go: function () {
+                console.log('Метод go()', 'Имя:', this.name);
+            }
+        };
+
+        //ES5 - this = window
+        //ES6 - this = undefined
+        function showEmail(param1, param2) {
+            console.log(this);
+            console.log(this.email);
+            console.log('Параметры:', param1, param2);
+        }
+
+        console.log(user);
+        console.log(user.name, user.email);
+
+        //call, apply
+        user.go();
+
+        showEmail.call(user, 'value1', 'value2');
+        showEmail.apply(user, ['value1', 'value2']);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

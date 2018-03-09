@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES6</title>
+    <script>
+        'use strict';
+
+        class BaseCar
+        {
+            constructor(model, color, year)
+            {
+                this.model = model;
+                this.color = color;
+                this.year = year;
+            }
+
+            buy()
+            {
+                console.log('Автомобиль', this.model, this.year, 'куплен!');
+            }
+        }
+
+        class Car extends BaseCar
+        {
+            constructor(model, color, year, bonus)
+            {
+                super(model, color, year);
+                this.bonus = bonus;
+            }
+
+            buy()
+            {
+                super.buy();
+                console.log('Bonus:', this.bonus);
+            }
+        }
+
+        var car1 = new BaseCar('Honda', 'black', 2016);
+        console.log(car1, car1.model);
+        car1.buy();
+
+        var car2 = new Car('Honda', 'black', 2015, 100000);
+        console.log(car2);
+        car2.buy();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

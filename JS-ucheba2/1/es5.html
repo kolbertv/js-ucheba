@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES5</title>
+    <script>
+        function User(name, age) {
+            this.name = name;
+            this.age = age;
+
+            // this.go = function (h) {
+            //     console.log('Пользователь прошел', h, 'м.');
+            // }
+        }
+
+        User.prototype.go = function (h) {
+                 console.log('Пользователь прошел', h, 'м.');
+             };
+
+        function Developer(name, age, department, salary) {
+            User.call(this, name, age);
+            this.department = department;
+            this.salary = salary;
+        }
+
+        Developer.prototype = Object.create(User.prototype); //Наследование __proto__
+        Developer.prototype.constructor = Developer; //Возвращаем конструктор на место
+
+        var user1 = new User('Anna', 27);
+        console.log(user1);
+        console.log(user1.name);
+        user1.go(400);
+
+        var user2 = new User('Olga', 25);
+        console.log(user2);
+        user2.go(500);
+
+        var dev1 = new Developer('Alex', 25, 'Frontend', 80000);
+        console.log(dev1);
+        dev1.go(700);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

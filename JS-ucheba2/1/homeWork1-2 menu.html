@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <script>
+        function Menu(myId, myClass, myItems) {
+            this.id = myId;
+            this.className = myClass;
+            this.items = myItems;
+        }
+
+        Menu.prototype.render = function () {
+            var result = '<ul class="' + this.className + '" id="' + this.id + '">';
+
+            for (var i = 0; i < this.items.length; i++) {
+                //Проверка на пункт
+                if (this.items[i] instanceof MenuItem) {
+                    result += this.items[i].renderItem();
+                }
+
+                if (this.items[i] instanceof subMenuItem) {
+                    result += this.items[i].renderSubMenuItem();
+                }
+
+                /**
+                 *  Проверка на наличие Меню в массиве и создание подменю
+                 **/
+                if (this.items[i] instanceof Menu) {
+                    result += '<li><a href=' + this.items[i].id + '>' + this.items[i].className + '</a><ul>';
+                    for (var j = 0; j < this.items[i].items.length; j++) {
+                        result += this.items[i].items[j].renderItem();
+                    }
+                    result += '</ul></li>';
+                }
+            }
+
+            result += '</ul>';
+            return result;
+        };
+
+        Menu.prototype.remove = function () {
+            const menuItem = document.getElementById(this.id).querySelectorAll('li');
+            document.getElementById(this.id).removeChild(menuItem[menuItem.length - 1]);
+        };
+
+
+        function MenuItem(href, title) {
+            this.href = href;
+            this.title = title;
+        }
+
+        MenuItem.prototype.renderItem = function () {
+            return '<li><a href="' + this.href + '">' + this.title + '</a></li>';
+        };
+
+
+        /**
+         * Функция подменю
+         * @param title
+         * @param items
+         */
+        function subMenuItem(title, items) {
+            this.title = title;
+            this.items = items;
+        }
+
+        /**
+         * Вывод подменю
+         * @returns {string}
+         */
+        subMenuItem.prototype.renderSubMenuItem = function () {
+            var result = '<li><a href="#">' + this.title + '</a><ul>';
+            for (var i = 0; i < this.items.length; i++) {
+                if (this.items[i] instanceof MenuItem) {
+                    result += this.items[i].renderItem();
+                }
+            }
+            result += '</ul></li>';
+            return result;
+        };
+
+
+        window.onload = function () {
+            var menuContainer = document.getElementById('menu');
+
+            var menu1 = new Menu('my', 'my', [
+                new MenuItem('/', 'Главная страница'),
+                new subMenuItem('Подменю2', [
+                    new MenuItem('#', 'подменю'),
+                    new MenuItem('#', 'подменю'),
+                    new MenuItem('#', 'подменю')
+                ]),
+                new Menu('#', 'Подменю2', [
+                    new MenuItem('#', 'подменю'),
+                    new MenuItem('#', 'подменю'),
+                    new MenuItem('#', 'подменю'),
+                ]),
+                new MenuItem('/about/', 'О нас'),
+                new MenuItem('/contacts/', 'Контакты'),
+                new MenuItem('/blog/', 'Блог'),
+                new Menu('#', 'Подменю3', [
+                    new MenuItem('#', 'подменю'),
+                    new MenuItem('#', 'подменю'),
+                    new MenuItem('#', 'подменю')
+                ])
+            ]);
+
+            menuContainer.innerHTML = menu1.render();
+//            console.log(menu1.render());
+
+        };
+    </script>
+</head>
+<body>
+<div id="menu"></div>
+</body>
+</html>
