@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <script>
+        function Menu(myId, myClass, myItems) {
+            this.id = myId;
+            this.className = myClass;
+            this.items = myItems;
+        }
+
+        Menu.prototype.render = function () {
+            var result = '<ul class="'+this.className+'" id="'+this.id+'">';
+
+            for(var i = 0; i < this.items.length; i++)
+            {
+                //Проверка на пункт
+                if(this.items[i] instanceof MenuItem) {
+                    result += this.items[i].renderItem();
+                }
+            }
+
+            result += '</ul>';
+            return result;
+        };
+
+        Menu.prototype.remove = function () {
+            //TODO:
+        };
+
+        function MenuItem(href, title) {
+            this.href = href;
+            this.title = title;
+        }
+
+        MenuItem.prototype.renderItem = function () {
+            return '<li><a href="'+this.href+'">'+this.title+'</a></li>';
+        };
+
+        window.onload = function () {
+            var menuContainer = document.getElementById('menu');
+            var btn1 = document.getElementById('btn1');
+
+            btn1.addEventListener('click', function () {
+                var xhr = new XMLHttpRequest();
+                xhr.open('GET', './items.json');
+                xhr.onreadystatechange = function () {
+                    if(xhr.readyState !== 4){
+                        return;
+                    }
+
+                    if (xhr.status !== 200){
+                        return;
+                    }
+
+                    var myItems = JSON.parse(xhr.responseText);
+                    var items = []; //Для пунктов меню
+
+                    for(var i = 0; i < myItems.length; i++)
+                    {
+                        items.push(new MenuItem(myItems[i].href, myItems[i].title));
+                    }
+
+                    var menu1 = new Menu('my', 'my', items);
+                    menuContainer.innerHTML = menu1.render();
+                };
+                xhr.send();
+            });
+
+        };
+    </script>
+</head>
+<body>
+<div id="menu"></div>
+<button id="btn1">Получить пункты и отрисовать меню</button>
+</body>
+</html>

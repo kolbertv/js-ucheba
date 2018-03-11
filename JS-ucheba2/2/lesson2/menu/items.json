@@ -1,0 +1,7 @@
+[
+  {"href": "/", "title": "Главная страница - AJAX"},
+  {"href": "/about", "title": "О нас"},
+  {"href": "/service", "title": "Услуги"},
+  {"href": "/blog", "title": "Блог"},
+  {"href": "/contacts", "title": "Контакты"}
+]

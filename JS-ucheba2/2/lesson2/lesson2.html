@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson2 - AJAX</title>
+    <script>
+        //JSON
+        var userJson = '{"name": "Anna", "age": 27, "isMale": false}';
+
+        var user = JSON.parse(userJson);
+        console.log(user, user.name);
+
+        user.friends = ['Ilya', 'Olga', 'Alex'];
+
+        user.address = {
+            city: "Moscow",
+            street: 'Novaya Street'
+        };
+
+        user.dataEvent = '2018-03-09';
+
+        console.log(user);
+
+        var jsonFromUser = JSON.stringify(user, null, 4);
+        //var jsonFromUser = JSON.stringify(user, ['name', 'age'], 4);
+        console.log(jsonFromUser);
+
+        //Parse
+        var user2 = JSON.parse(jsonFromUser, function (key, value) {
+            console.log(key, ' => ', value);
+            if(key === 'dataEvent'){
+                value = new Date(value);
+            }
+            return value;
+        });
+
+        console.log(user2.dataEvent.getDate(), user2.dataEvent.getFullYear());
+
+        //AJAX
+        //Синхронный запрос
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', './tel.json', false); //false - Синхронный запрос
+        xhr.send();
+        //Обработка результата ответа сервера
+        if(xhr.status !== 200)
+        {
+            console.log('Error', xhr.status, xhr.statusText);
+        } else {
+            console.log('Ok', xhr.responseText);
+            var telObj = JSON.parse(xhr.responseText);
+            console.log(telObj);
+        }
+
+        //Асинхроный запрос
+        xhr = new XMLHttpRequest();
+        xhr.open('GET', './tel.json', true); //true - Асинхроный запрос
+
+        xhr.onreadystatechange = function () {
+            //Коды выполнения запроса
+            //0 - запрос не инициализирован
+            //1 - загрузка
+            //2 - запрос принят сервером
+            //3 - идет обмен данными с сервером
+            //4 - запрос выполнен
+            console.log(xhr.readyState);
+
+            if(xhr.readyState !== 4) {
+                return;
+            }
+
+            //Обработка результата ответа сервера
+            if(xhr.status !== 200)
+            {
+                console.log('Error', xhr.status, xhr.statusText);
+            } else {
+                console.log('Ok async', xhr.responseText);
+                var telObj = JSON.parse(xhr.responseText);
+                console.log(telObj);
+            }
+        };
+
+        xhr.send();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

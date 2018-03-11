@@ -1,0 +1,130 @@
+html {
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+body p {
+  padding: 0;
+  margin: 0;
+  //width: 1600px;
+}
+
+.topLine1 {
+  width: 1600px;
+  margin: 25px auto;
+  height: 51px;
+
+}
+
+.topLine {
+  width: 1142px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  //justify-content: space-between;
+
+  background-color: yellow;
+}
+
+.topLine input {
+  margin-right: 349px;
+  width: 301px;
+  height: 38px;
+  margin-left: -1px;
+  border: none;
+  box-shadow: 0 0 0 1px #e6e6e6;
+  padding-left: 16px;
+}
+
+.topLine input:focus {
+  outline: none;
+}
+
+.topLine img[alt="корзина"] {
+  margin-right: 26px;
+}
+
+.topLine img[alt="лого компании"] {
+  margin-right: 13px;
+}
+
+.topLine img:hover {
+  cursor: pointer;
+}
+
+
+.topLine button {
+  height: 40px;
+  border: none;
+  box-shadow: 0 0 0 1px #e6e6e6;
+}
+
+.topLine button:focus {
+  outline: none;
+}
+
+.topLine button:hover {
+  cursor: pointer;
+}
+
+.browse {
+  width: 87px;
+  background-color: #cdcdcc;
+  background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+  color: #222222;
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  text-transform: capitalize;
+}
+
+
+
+.topLineBrand {
+  margin-right: 37px;
+  color: #222222;
+  font-size: 27px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.68px;
+}
+
+.topLineBrand span {
+  color: #f16d7f;
+}
+
+.navBackgroundImage {
+  margin: 0 auto;
+  width: 1600px;
+  height: 665px;
+  background-color: #e8e8e8;
+  padding-top: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  width: 680px;
+  height: 51px;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav a {
+  display: block;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+.navBackgroundImageLine {
+  width: 1600px;
+  height: 51px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
