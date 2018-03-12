@@ -20,8 +20,7 @@ body p {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  background-color: yellow; }
+  align-items: center; }
 
 .topLine input {
   margin-right: 349px;
@@ -49,7 +48,8 @@ body p {
   height: 40px;
   border: none;
   -webkit-box-shadow: 0 0 0 1px #e6e6e6;
-  box-shadow: 0 0 0 1px #e6e6e6; }
+  box-shadow: 0 0 0 1px #e6e6e6;
+  font-family: 'Lato', sans-serif; }
 
 .topLine button:focus {
   outline: none; }
@@ -57,7 +57,7 @@ body p {
 .topLine button:hover {
   cursor: pointer; }
 
-.browse {
+.buttonBrowse {
   width: 87px;
   background-color: #cdcdcc;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f5f5f5));
@@ -67,6 +67,15 @@ body p {
   color: #222222;
   font-size: 14px;
   letter-spacing: 0.35px;
+  text-transform: capitalize; }
+
+.buttonMyAccount {
+  width: 130px;
+  background-color: #f16d7f;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.38px;
   text-transform: capitalize; }
 
 .topLineBrand {
@@ -105,7 +114,8 @@ body p {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
 
 .nav a {
   display: block;
@@ -113,7 +123,8 @@ body p {
   font-size: 14px;
   font-weight: 700;
   line-height: 26px;
-  text-decoration: none; }
+  text-decoration: none;
+  z-index: 1; }
 
 .navBackgroundImageLine {
   width: 1600px;
@@ -125,3 +136,47 @@ body p {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+
+.dropDownMenu {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 237px;
+  background-color: white;
+  z-index: 1000;
+  top: 140px;
+  left: 500px;
+  opacity: 0.9;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  visibility: hidden; }
+
+.dropDownMenu p {
+  color: #232323;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  margin-top: 23px;
+  margin-left: 27px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-right: 27px; }
+
+.dropDownMenu a {
+  text-transform: capitalize;
+  color: #646464;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  text-decoration: none;
+  margin-left: 27px;
+  margin-top: 15px; }
+
+.dropDownMenu a:last-child {
+  margin-bottom: 15px; }

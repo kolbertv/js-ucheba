@@ -22,8 +22,7 @@ body p {
   display: flex;
   align-items: center;
   //justify-content: space-between;
-
-  background-color: yellow;
+  //background-color: yellow;
 }
 
 .topLine input {
@@ -57,6 +56,7 @@ body p {
   height: 40px;
   border: none;
   box-shadow: 0 0 0 1px #e6e6e6;
+  font-family: 'Lato', sans-serif;
 }
 
 .topLine button:focus {
@@ -67,7 +67,7 @@ body p {
   cursor: pointer;
 }
 
-.browse {
+.buttonBrowse {
   width: 87px;
   background-color: #cdcdcc;
   background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
@@ -77,7 +77,16 @@ body p {
   text-transform: capitalize;
 }
 
+.buttonMyAccount {
+  width: 130px;
+  background-color: #f16d7f;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.38px;
+  text-transform: capitalize;
 
+}
 
 .topLineBrand {
   margin-right: 37px;
@@ -109,6 +118,7 @@ body p {
   text-transform: uppercase;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
 }
 
@@ -119,6 +129,7 @@ body p {
   font-weight: 700;
   line-height: 26px;
   text-decoration: none;
+  z-index: 1;
 }
 
 .navBackgroundImageLine {
@@ -127,4 +138,46 @@ body p {
   background-color: white;
   display: flex;
   justify-content: center;
+}
+
+.dropDownMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  min-width: 237px;
+  background-color: white;
+  z-index: 1000;
+  top: 140px;
+  left: 500px;
+  opacity: 0.9;
+  border-radius: 5px;
+  border: 1px solid #e8e8e8;
+  visibility: hidden;
+}
+.dropDownMenu p {
+  color: #232323;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  margin-top: 23px;
+  margin-left: 27px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-right: 27px;
+}
+
+.dropDownMenu a {
+  text-transform: capitalize;
+  color: #646464;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  text-decoration: none;
+  margin-left: 27px;
+  margin-top: 15px;
+}
+
+.dropDownMenu a:last-child {
+  margin-bottom: 15px;
 }
