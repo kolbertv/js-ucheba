@@ -51,7 +51,6 @@ body p {
   cursor: pointer;
 }
 
-
 .topLine button {
   height: 40px;
   border: none;
@@ -154,6 +153,7 @@ body p {
   border: 1px solid #e8e8e8;
   visibility: hidden;
 }
+
 .dropDownMenu p {
   color: #232323;
   font-size: 14px;
@@ -182,4 +182,56 @@ body p {
   margin-bottom: 15px;
 }
 
+.gallery {
+  margin: 60px auto;
+  height: 765px;
+  width: 1139px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+
+  //border: 1px solid black;
+}
+
+.galleryItem {
+  height: 364px;
+  width: 263px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.galleryItem:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+.galleryItemImg {
+  height: 280px;
+  width: 260px;
+}
+
+.modalWindow {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 10000;
+
+
+}
+
+.modalWindow:target {
+  display: block;
+}
+
+.modalWindow>div {
+  position: relative;
+  width: 1024px;
+  margin: 5% auto;
+}
 
