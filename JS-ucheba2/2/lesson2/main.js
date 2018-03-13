@@ -7,6 +7,11 @@ let menu = {
         dropMenuClass: '',
     },
 
+    dropDownMenuCheck: {
+        result: '',
+        exist: false,
+    },
+
     render(settings) {
         this.settings = Object.assign(this.settings, settings);
         let menuContainer = document.getElementsByClassName(this.settings.menuClass)[0];
@@ -19,63 +24,55 @@ let menu = {
     },
 
     mouseOverHandler(event) {
+
         if ((event.target.tagName !== 'A') && (event.target.className !== this.settings.dropMenuClass)) {
             return;
         }
 
-        let dropDownMenuItem = document.getElementsByClassName(this.settings.dropMenuClass)[0];
+        if (parseInt(event.target.dataset.dropmenu)) {
 
-        if (event.target.tagName === 'A') {
+            let dropDownMenuItem = document.getElementsByClassName(this.settings.dropMenuClass)[0];
             let elem = event.target.getBoundingClientRect();
-            dropDownMenuItem.style.left = parseInt(elem.left) - 30 + 'px';
-        }
 
-        dropDownMenuItem.innerHTML = this.dropDownMenuRender();
 
-        if (this.dropDownMenuRender() !== '0') {
+            if (event.target.tagName === 'A') {
+
+                dropDownMenuItem.style.left = parseInt(elem.left) - 30 + 'px';
+                dropDownMenuItem.innerHTML = this.dropDownMenuRender(event);
+            }
             dropDownMenuItem.style.visibility = 'visible';
-
         }
-
     },
 
     mouseOutHandler(event) {
 
-        if ((event.target.tagName === 'A') && (event.target.className === this.settings.dropMenuClass)) {
+        if ((event.target.tagName === 'A')) {
             return;
         }
-
         let dropDownMenuItem = document.getElementsByClassName(this.settings.dropMenuClass)[0];
         dropDownMenuItem.style.visibility = 'hidden';
 
     },
 
-
-    dropDownMenuRender(elm) {
-
-        let result = '';
-        let items = this.parseJson(this.settings.jsonFile);
-
-        for (let i = 0; i < items.length; i++) {
-
-
-            result += '<a href="' + items[i].href + '">' + items[i].title + '</a>';
-            console.log(items[i].submenu);
-
-        }
-        return result;
-
-
+    dropDownMenuRender(event) {
+        // console.log(event.target.textContent);
+        let jsonFile = 'json/' + event.target.textContent + '.json';
+        return this.menuCreate(jsonFile);
     },
-
 
     menuCreate(jsonFile) {
         let result = '';
         let items = this.parseJson(jsonFile);
-        // console.log(items);
         for (let i = 0; i < items.length; i++) {
-            result += '<a href="' + items[i].href + '">' + items[i].title + '</a>';
+
+            if (parseInt(items[i].submenu)) {
+                result += '<a href="' + items[i].href + '" data-dropmenu="' + items[i].submenu + '">' + items[i].title + '</a>';
+            } else {
+                result += '<a href="' + items[i].href + '">' + items[i].title + '</a>';
+            }
         }
+
+        // console.log(result);
         return result;
     },
 
@@ -88,12 +85,11 @@ let menu = {
                 return;
             }
             if (xhr.status !== 200) {
-                console.log('ошибка' + xhr.status);
                 return;
             }
             myItems = JSON.parse(xhr.responseText);
-            // console.log(myItems);
         };
+
         xhr.send();
         return myItems;
     },
@@ -107,5 +103,6 @@ window.onload = function () {
         dropMenuClass: 'dropDownMenu',
     });
 };
+
 
 

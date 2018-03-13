@@ -1,29 +1,9 @@
 ﻿[
-  {"href": "index.html", "title": "home", "submenu": 
-[
-{"href": "0", "title": "0"}
-]},
-
-  {"href": "#", "title": "man", "submenu": 
-[
-	{"href": "#", "title": "dressed"},
-	{"href": "#", "title": "tops"},
-	{"href": "#", "title": "sweaters/knits"},
-	{"href": "#", "title": "jackets/coats"},
-	{"href": "#", "title": "blazers"},
-	{"href": "#", "title": "leggings/pants"},
-	{"href": "#", "title": "skirts/shorts"},
-	{"href": "#", "title": "accessories"},
-	{"href": "#", "title": "bags/purses"},
-	{"href": "#", "title": "swimwear/underwear"},
-	{"href": "#", "title": "nightwear"},
-	{"href": "#", "title": "shoes"},
-	{"href": "#", "title": "beauty"}
-]},
-
-  {"href": "#", "title": "woman"},
-  {"href": "#", "title": "kids"},
-  {"href": "#", "title": "accessories"},
-  {"href": "#", "title": "featured"},
-  {"href": "#", "title": "hot deals"}
+  {"href": "index.html", "title": "home", "submenu": "0"},
+  {"href": "#", "title": "man", "submenu": "1"},
+  {"href": "#", "title": "woman", "submenu": "1"},
+  {"href": "#", "title": "kids", "submenu": "1"},
+  {"href": "#", "title": "accessories", "submenu": "1"},
+  {"href": "#", "title": "featured", "submenu": "0"},
+  {"href": "#", "title": "hot deals", "submenu": "1"}
 ]
