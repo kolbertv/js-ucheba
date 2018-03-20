@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TПридумать шаблон, который меняет одинарные кавычки на двойные.</title>
+</head>
+<body>
+
+<script>
+    "use strict";
+
+    let text = `The contraction aren't is used in standard English to mean 'am not' in questions,
+    as in I'm right, aren't I? The more logical form amn't is now non-standard and restricted to Scottish,
+    Irish, and dialect use. Outside questions, it is incorrect to use aren't to mean 'am not' (for example,
+    I aren't going is clearly wrong`;
+
+
+    console.log(text.replace(/'/g,'"'));
+
+    console.log(text.replace(/'/g,function (str, offset, s) {
+
+        if ((s.charAt(offset-1) === 'n' && s.charAt(offset+1) === 't') || (s.charAt(offset-1) === 'I' && s.charAt(offset+1) === 'm')) {
+
+            return "'"
+        } else
+        {
+            return '"';
+        }
+    }));
+
+
+</script>
+
+
+
+</body>
+</html>
