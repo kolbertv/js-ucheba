@@ -1,0 +1,60 @@
+html p{
+  margin: 0;
+  padding: 0;
+}
+
+.tabContainer {
+  border: 1px solid black;
+  width: auto;
+  display: flex;
+
+}
+
+.tabitemcontainer {
+
+}
+
+//p{
+//}
+
+.tabItem {
+  border: 1px solid black;
+  height: 40px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.tabContainer {
+
+}
+
+.tabContent {
+  border: 1px solid black;
+  padding: 5px;
+  height: 100px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.activeTabItem {
+  color: red;
+  //display: flex;
+}
+
+.activTabContent {
+  display: flex;
+  background-color: #cdcdcc;
+}
+
+.tabItem:hover {
+  cursor: pointer;
+  color: rosybrown;
+}
+
+.noActive {
+  display: none;
+}

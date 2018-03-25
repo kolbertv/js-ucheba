@@ -1,0 +1,52 @@
+html p {
+  margin: 0;
+  padding: 0; }
+
+.tabContainer {
+  border: 1px solid black;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.tabItem {
+  border: 1px solid black;
+  height: 40px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.tabContent {
+  border: 1px solid black;
+  padding: 5px;
+  height: 100px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.activeTabItem {
+  color: red; }
+
+.activTabContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #cdcdcc; }
+
+.tabItem:hover {
+  cursor: pointer;
+  color: rosybrown; }
+
+.noActive {
+  display: none; }
