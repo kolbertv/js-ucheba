@@ -20,30 +20,12 @@ class Basket {
             dataType: 'json',
             context: this,
             success: function (data) {
-                let $basketData = $('<div />', {
-                    id: 'basket_data'
-                });
-
+                let $basketData = $('#basket_data');
                 this.coutGoods = data.basket.length;
                 this.ammount = data.amount;
-
-                $basketData.append('<p>всего товаров:' + this.countGoods + '</p>');
-                $basketData.append('<p>общая сумма:' + this.ammount + '</p>');
-                $basketData.appendTo(appendId);
-
-                /**
-                 * Добавить товары в массив
-                 */
-
-                for (let itemKey in data.basket) {
-                    this.basketItems.push(data.basket[itemKey]);
-                }
-
-                console.log(this.basketItems);
+                $basketData.append('<div><p>всего:</p></div>' + '<div><p>' + this.ammount + ' руб. </p></div>');
             }
-
         });
-
 
     };
 
@@ -52,17 +34,18 @@ class Basket {
      */
 
     render(root) {
-        let $basketDiv = $('<div />',{
-            id: this.id,
-            text: 'Корзина'
-        });
 
         let $basketItemDiv = $('<div />', {
             id: this.id + '_items'
         });
 
-        $basketItemDiv.appendTo($basketDiv);
-        $basketDiv.appendTo(root);
+        let $basketItemDivData = $('<div />', {
+            id: this.id + '_data',
+            class: 'basket_total'
+        });
+
+        $basketItemDiv.appendTo(root);
+        $basketItemDivData.appendTo(root);
     };
 
     /**
@@ -71,15 +54,17 @@ class Basket {
      * @param quantity
      * @param price
      */
-    add(idProduct, quantity, price) {
+    add(idProduct, quantity, price, title) {
         let basketItems = {
             "id_product": idProduct,
-            "price": price
+            "price": price,
+            "title": title
         };
 
         this.countGoods += quantity;
-        this.ammount += price*quantity;
+        this.ammount += price * quantity;
         this.basketItems.push(basketItems);
+        console.log(this.basketItems);
         this.refresh();
     }
 
@@ -88,14 +73,52 @@ class Basket {
      */
     refresh() {
 
-        let $basketDataDiv = $('#basket_data');
+        let $basketDataDiv = $('#basket_items');
         $basketDataDiv.empty();
-        $basketDataDiv.append('<p>всего товаров:' + this.countGoods + '</p>');
-        $basketDataDiv.append('<p>общая сумма:' + this.ammount + '</p>');
+
+        let $basketData = $('#basket_data');
+        $basketData.empty();
+
+        for (let itemKey = 0; itemKey < this.basketItems.length; itemKey++) {
+
+            if ($('div').is('#' + this.basketItems[itemKey].id_product)) {
+
+                let findId = $('#' + this.basketItems[itemKey].id_product).find('#items_ammount');
+                let a = findId.text();
+                findId.text(parseInt(a) + 1);
+
+            } else {
+
+                let $itemGoodDiv = $('<div />', {
+                    id: this.basketItems[itemKey].id_product,
+                    class: 'item_good_div'
+                });
+
+                $itemGoodDiv.append('<div><img src="layer-43.png" alt="картинка"></div>');
+                $itemGoodDiv.append('<div><p>' + this.basketItems[itemKey].title + '</p>' +
+                    '<span id="items_ammount">' + '1' + '</span>' + '<span> x </span>' + this.basketItems[itemKey].price + ' руб.</p></div>');
+                $itemGoodDiv.append('<div><img id="but_del" src="del.png" alt="картинка"></div>');
+                $basketDataDiv.append($itemGoodDiv);
+                $itemGoodDiv.find('#but_del').attr('data-id', this.basketItems[itemKey].id_product);
+
+            }
+        }
+
+        $basketData.append('<div><p>всего:</p></div>' + '<div><p>' + this.ammount + ' </p></div>');
     }
 
     remove(id) {
 
+        for (let itemKey = parseInt(this.basketItems.length) - 1; itemKey => 0; itemKey = itemKey - 1) {
+
+            if (parseInt(this.basketItems[itemKey].id_product) === parseInt(id)) {
+                this.ammount = this.ammount - this.basketItems[itemKey].price;
+                this.basketItems.splice(itemKey, 1);
+                this.refresh();
+                return;
+            }
+
+        }
 
     }
 
@@ -121,7 +144,12 @@ $(document).ready(function () {
         let idProduct = parseInt($(this).attr('data-id'));
         let quantity = 1;
         let price = parseInt($(this).parent().find('.product-price').text());
-        basket.add(idProduct,quantity,price);
-    })
+        let title = $(this).parent().find('.title').text();
+        basket.add(idProduct, quantity, price, title);
+    });
+
+    $('body').on('click', '#but_del', function () {
+        basket.remove($(this).attr('data-id'));
+    });
 
 });

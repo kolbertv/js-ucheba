@@ -13,6 +13,7 @@ class Good {
         goodContainer.className = 'good';
 
         let goodTitle = document.createElement('p');
+        goodTitle.className = 'title';
         goodTitle.textContent = this.title;
 
         let goodPrice = document.createElement('p');
