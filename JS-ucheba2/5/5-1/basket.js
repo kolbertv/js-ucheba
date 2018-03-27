@@ -100,11 +100,10 @@ class Basket {
                 $itemGoodDiv.append('<div><img id="but_del" src="del.png" alt="картинка"></div>');
                 $basketDataDiv.append($itemGoodDiv);
                 $itemGoodDiv.find('#but_del').attr('data-id', this.basketItems[itemKey].id_product);
-
             }
         }
 
-        $basketData.append('<div><p>всего:</p></div>' + '<div><p>' + this.ammount + ' </p></div>');
+        $basketData.append('<div><p>всего:</p></div>' + '<div><p>' + this.ammount + ' руб.</p></div>');
     }
 
     remove(id) {
@@ -125,7 +124,6 @@ class Basket {
 }
 
 $(document).ready(function () {
-
 
     let goods = document.getElementById('goods');
     let good1 = new Good(123, 'клавиутура', 500);
