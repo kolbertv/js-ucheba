@@ -13,24 +13,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.35615578">
+    <splitter split-orientation="horizontal" split-proportion="0.4021376">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="basket.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/5/5-1/basket.html">
+        <leaf>
+          <file leaf-file-name="review.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/5/5-2/review.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+                <state relative-caret-position="309">
+                  <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="basket.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/5/5-1/basket.js">
+          <file leaf-file-name="list.json" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/5/5-2/list.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="408">
+                  <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -40,42 +40,35 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="basket.json" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/5/5-1/basket.json">
+          <file leaf-file-name="review.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/5/5-2/review.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+                <state relative-caret-position="238">
+                  <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="basket.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/5/5-1/basket.scss">
+          <file leaf-file-name="review.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/5/5-2/review.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+                <state relative-caret-position="561">
+                  <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="good.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/5/5-1/good.js">
+          <file leaf-file-name="review.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/5/5-2/review.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="basket.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/5/5-1/basket.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
-                  <caret line="68" column="5" lean-forward="true" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-                  <folding />
+                <state relative-caret-position="289">
+                  <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+                  <folding>
+                    <marker date="1522155123527" expanded="true" signature="62:108" ph="{...}" />
+                    <marker date="1522155123527" expanded="true" signature="705:709" ph="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -89,8 +82,10 @@
       <list>
         <option value="CSS File" />
         <option value="Sass File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+        <option value="package_json" />
       </list>
     </option>
   </component>
@@ -114,9 +109,16 @@
         <option value="$PROJECT_DIR$/3/3-1.html" />
         <option value="$PROJECT_DIR$/5/5-1/good.js" />
         <option value="$PROJECT_DIR$/5/5-1/basket.json" />
-        <option value="$PROJECT_DIR$/5/5-1/basket.scss" />
         <option value="$PROJECT_DIR$/5/5-1/basket.html" />
+        <option value="$PROJECT_DIR$/5/5-1/basket.scss" />
+        <option value="$PROJECT_DIR$/5/5-1/basket.css" />
         <option value="$PROJECT_DIR$/5/5-1/basket.js" />
+        <option value="$PROJECT_DIR$/5/5-2/review.css" />
+        <option value="$PROJECT_DIR$/5/5-2/review.scss" />
+        <option value="$PROJECT_DIR$/5/5-2/package.json" />
+        <option value="$PROJECT_DIR$/5/5-2/review.html" />
+        <option value="$PROJECT_DIR$/5/5-2/list.json" />
+        <option value="$PROJECT_DIR$/5/5-2/review.js" />
       </list>
     </option>
   </component>
@@ -134,10 +136,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
-    <option name="y" value="30" />
-    <option name="width" value="1827" />
-    <option name="height" value="1016" />
+    <option name="x" value="89" />
+    <option name="y" value="95" />
+    <option name="width" value="1715" />
+    <option name="height" value="790" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -154,6 +156,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,21 +179,19 @@
               <item name="JS-ucheba2" type="b2602c69:ProjectViewProjectNode" />
               <item name="JS-ucheba2" type="462c0819:PsiDirectoryNode" />
               <item name="5" type="462c0819:PsiDirectoryNode" />
-              <item name="5-1" type="462c0819:PsiDirectoryNode" />
+              <item name="5-2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JS-ucheba2" type="b2602c69:ProjectViewProjectNode" />
               <item name="JS-ucheba2" type="462c0819:PsiDirectoryNode" />
               <item name="5" type="462c0819:PsiDirectoryNode" />
-              <item name="5-1" type="462c0819:PsiDirectoryNode" />
-              <item name="basket.scss" type="620a8d5e:NestingTreeNode" />
+              <item name="5-2" type="462c0819:PsiDirectoryNode" />
+              <item name="review.scss" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,7 +199,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="list.type.of.created.stylesheet" value="Sass" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
@@ -240,17 +242,17 @@
       <workItem from="1521554260625" duration="149000" />
       <workItem from="1521564028580" duration="19000" />
       <workItem from="1522085763055" duration="18528000" />
+      <workItem from="1522133836149" duration="10749000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116688000" />
+    <option name="totallyTimeSpent" value="127437000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="30" width="1827" height="1016" extended-state="0" />
-    <editor active="true" />
+    <frame x="89" y="95" width="1715" height="790" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11011738" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11889347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -299,41 +301,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/2/lesson2/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2/lesson2/menu/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" column="7" lean-forward="false" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2/lesson2/menu/items.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2/lesson2/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
-          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2/lesson2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2/lesson2/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -607,17 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3/3-1.html">
+    <entry file="file://$PROJECT_DIR$/3/3-1.html" />
+    <entry file="file://$PROJECT_DIR$/5/5-1/basket.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/5/5-1/basket.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-661">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -625,40 +585,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5/5-1/basket.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5/5-1/basket.js">
+    <entry file="file://$PROJECT_DIR$/5/5-1/basket.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="68" column="5" lean-forward="true" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/5/5-1/good.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/5/5-1/basket.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="1598">
+          <caret line="94" column="1" lean-forward="false" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5/5-1/basket.json">
+    <entry file="file://$PROJECT_DIR$/5/5-1/basket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="289">
+          <caret line="110" column="21" lean-forward="false" selection-start-line="110" selection-start-column="21" selection-end-line="110" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5/5-2/review.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="36" column="24" lean-forward="true" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+          <folding>
+            <marker date="1522155123527" expanded="true" signature="62:108" ph="{...}" />
+            <marker date="1522155123527" expanded="true" signature="705:709" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5/5-2/review.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5/5-2/list.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="14" lean-forward="false" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5/5-2/review.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5/5-2/review.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding />
         </state>
       </provider>
