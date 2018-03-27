@@ -1,0 +1,14 @@
+{
+  "name": "6",
+  "homepage": "https://github.com/kolbertv/js-ucheba",
+  "authors": [
+    "kolbert <kolbert@yandex.ru>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery-ui": "^1.12.1"
+  }
+}
