@@ -1,0 +1,37 @@
+html body p {
+  margin: 0;
+  padding: 0; }
+
+.review_container {
+  margin: 0 auto;
+  width: 400px;
+  height: auto;
+  border: 1px solid #cccccc;
+  background-color: #f2f2f2;
+  padding: 5px; }
+
+.review_item {
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 10px;
+  margin-top: 10px; }
+  .review_item p {
+    margin-bottom: 10px; }
+  .review_item textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50px; }
+
+#review_add {
+  margin-top: 50px;
+  margin-bottom: 10px; }
