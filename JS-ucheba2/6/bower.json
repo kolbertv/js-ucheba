@@ -9,6 +9,8 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "jquery-ui": "^1.12.1"
+    "jquery-ui": "^1.12.1",
+    "font-awesome": "^5.0.9",
+    "lato": "^0.3.0"
   }
 }

@@ -2,18 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Домашка</title>
     <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/all.css">
     <link rel="stylesheet" href="bower_components/jquery-ui/themes/cupertino/jquery-ui.min.css">
     <link rel="stylesheet" href="bower_components/jquery-ui/themes/cupertino/theme.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="bower_components/font-awesome/svg-with-js/js/fontawesome-all.js"></script>
 </head>
 <body>
 
+<form action="action" method="post" class="delivery_form">
+    <div class="order_regist_container">
+        <fieldset class="customer">
+            <legend>Покупатель</legend>
+            <label for="phone">
+                Телефон
+                <span class="star_required">*</span>
+                <span class="right">Нужно заполнить</span>
+            </label>
+            <input id="phone" type="text" placeholder="+7(999)999-99-99">
+            <label for="fio">
+                ФИО получателя
+                <span class="star_required">*</span>
+                <span class="right">Нужно заполнить</span>
+            </label>
+            <input id="fio" type="text" placeholder="Иванов Иван Иванович (можно только имя)">
+            <label for="email">
+                E-mail
+                <span class="star_required">*</span>
+                <span class="right">Нужно заполнить</span>
+            </label>
+            <input id="email" type="text" placeholder="email@email.ru">
+        </fieldset>
 
+        <fieldset class="delivery">
+            <legend>Доставка</legend>
+            <label for="post_index">
+                Почтовый индекс
+                <span class="star_required">*</span>
+                <span class="right">Нужно заполнить</span>
+            </label>
+            <input id="post_index" type="text" placeholder="000000" list="post_index_list">
+            <datalist id="post_index_list">
+                <option value="119633"></option>
+                <option value="119634"></option>
+                <option value="119635"></option>
+                <option value="119636"></option>
+            </datalist>
+            <label for="city">
+                Город
+                <span class="star_required">*</span>
+                <span class="right">Нужно заполнить</span>
+            </label>
+            <input id="city" type="text" placeholder="Москва" list="city_list">
+            <datalist id="city_list">
+                <option value="Москва"></option>
+                <option value="Екатеринбург"></option>
+                <option value="Самара"></option>
+                <option value="Волгоград"></option>
+            </datalist>
+            <label for="street">
+                Улица
+                <span class="star_required">*</span>
+                <span class="right">Нужно заполнить</span>
+            </label>
+            <input id="street" type="text" placeholder="Тверская" list="street_list">
+            <datalist id="street_list">
+                <option value="Тверская"></option>
+                <option value="шоссе Энтузиастов"></option>
+                <option value="Лубянка"></option>
+                <option value="Петровка"></option>
+            </datalist>
 
+            <div class="home_adress">
+                <div>
+                    <label for="home_numb">
+                        Номер дома
+                        <span class="star_required">*</span>
+                    </label>
+                    <input id="home_numb" type="text">
+                </div>
+                <div>
+                    <label for="block_numb">
+                        Корпус
+                        <span class="star_required">*</span>
+                    </label>
+                    <input id="block_numb" type="text">
+                </div>
+                <div>
+                    <label for="flat_numb">
+                        Квартира
+                        <span class="star_required">*</span>
+                    </label>
+                    <input id="flat_numb" type="text">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="payment">
+            <legend>Оплата</legend>
+        </fieldset>
+        <fieldset class="personal_data">
+            <legend>Персональные данные</legend>
+            <input id="personal_data_check" type="checkbox"> Я согласен на обработку своих персональных данных в соответсвии с <a href="#">Политикой
+            в отношении обработки персональных данных</a>
+        </fieldset>
+        <p>
+            <button class="send_button">Отправить</button>
+        </p>
+        <p>
+            <button class="send2_button">Я не хочу ничего заполнять</button>
+        </p>
+    </div>
+</form>
 
+<script src="js/index.js"></script>
 </body>
 </html>

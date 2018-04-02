@@ -1,0 +1,107 @@
+@import "../bower_components/lato/css/lato.css";
+
+html, body, a, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+p {
+  //font-family: Lato;
+  font-size: 27px;
+  font-weight: 300;
+  text-transform: uppercase;
+
+}
+
+.order_regist_container {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+
+  .send_button {
+    position: absolute;
+    left: 5px;
+  }
+.send2_button {
+  position: absolute;
+  right: -50px;
+}
+
+  fieldset {
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 10px;
+  }
+
+  .customer {
+    width: inherit;
+  }
+
+  .delivery {
+    width: inherit;
+  }
+
+  .payment {
+    width: 508px;
+  }
+
+
+  .personal_data {
+    width: 508px;
+    input {
+      width: auto;
+
+    }
+  }
+
+  label {
+    display: block;
+    width: 100%;
+    position: relative;
+    //margin-top: 10px;
+  }
+
+
+  .star_required {
+    color: red;
+  }
+
+  .right {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    color: gray;
+    font-size: 12px;
+  }
+
+  input {
+    width: inherit;
+    //height: 20px;
+    padding: 2px;
+    margin-bottom: 10px;
+
+  }
+
+  .home_adress {
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: 30%;
+    }
+    label {
+      display: inline-block;
+    }
+
+    input {
+      width: 95%;
+    }
+
+  }
+
+}

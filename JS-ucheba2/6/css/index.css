@@ -1,0 +1,67 @@
+@import url(../bower_components/lato/css/lato.css);
+html, body, a, p {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 400; }
+
+p {
+  font-size: 27px;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+.order_regist_container {
+  width: 500px;
+  margin: 0 auto;
+  position: relative; }
+  .order_regist_container .send_button {
+    position: absolute;
+    left: 5px; }
+  .order_regist_container .send2_button {
+    position: absolute;
+    right: -50px; }
+  .order_regist_container fieldset {
+    padding: 20px 20px 10px 20px;
+    margin-bottom: 10px; }
+  .order_regist_container .customer {
+    width: inherit; }
+  .order_regist_container .delivery {
+    width: inherit; }
+  .order_regist_container .payment {
+    width: 508px; }
+  .order_regist_container .personal_data {
+    width: 508px; }
+    .order_regist_container .personal_data input {
+      width: auto; }
+  .order_regist_container label {
+    display: block;
+    width: 100%;
+    position: relative; }
+  .order_regist_container .star_required {
+    color: red; }
+  .order_regist_container .right {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    color: gray;
+    font-size: 12px; }
+  .order_regist_container input {
+    width: inherit;
+    padding: 2px;
+    margin-bottom: 10px; }
+  .order_regist_container .home_adress {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .order_regist_container .home_adress div {
+      width: 30%; }
+    .order_regist_container .home_adress label {
+      display: inline-block; }
+    .order_regist_container .home_adress input {
+      width: 95%; }
