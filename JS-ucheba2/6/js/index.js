@@ -21,17 +21,19 @@ let getIp = {
 
     get() {
 
-       return this.getAjax(this.consoleRender)
+        return this.getAjax(this.consoleRender)
     },
 
-    consoleRender (data) {
-       console.log(data.city.name_ru);
-       console.log(data.region.name_ru);
-
-    }
+    consoleRender(data) {
+        console.log(data);
+        let customerLegend = document.getElementById('customer_legend');
+        customerLegend.innerText = customerLegend.innerText + ' IP: ' + data.ip;
+        let customerRegion = document.getElementById('region');
+        customerRegion.value = data.region.name_ru;
+        let customerCity = document.getElementById('city');
+        customerCity.value = data.city.name_ru;
+            }
 };
-
-
 
 
 window.onload = function () {

@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Домашка</title>
-    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/all.css">
-    <link rel="stylesheet" href="bower_components/jquery-ui/themes/cupertino/jquery-ui.min.css">
-    <link rel="stylesheet" href="bower_components/jquery-ui/themes/cupertino/theme.css">
-    <link rel="stylesheet" href="bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.css">
+    <!--<link rel="stylesheet" href="../bower_components/jquery-ui/themes/base/all.css">-->
+    <!--<link rel="stylesheet" href="../bower_components/jquery-ui/themes/cupertino/jquery-ui.min.css">-->
+    <!--<link rel="stylesheet" href="../bower_components/jquery-ui/themes/cupertino/theme.css">-->
+    <!--<link rel="stylesheet" href="../bower_components/font-awesome/web-fonts-with-css/css/fontawesome-all.css">-->
     <link rel="stylesheet" href="css/index.css">
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
-    <script src="bower_components/font-awesome/svg-with-js/js/fontawesome-all.js"></script>
+    <!--<script src="../bower_components/jquery/dist/jquery.min.js"></script>-->
+    <!--<script src="../bower_components/jquery-ui/jquery-ui.min.js"></script>-->
+    <!--<script src="../bower_components/font-awesome/svg-with-js/js/fontawesome-all.js"></script>-->
 </head>
 <body>
 
+
+
 <form action="action" method="post" class="delivery_form">
     <div class="order_regist_container">
-        <fieldset class="customer">
-            <legend>Покупатель</legend>
+        <fieldset class="customer" id="customer">
+            <legend id="customer_legend">Покупатель</legend>
             <label for="phone">
                 Телефон
                 <span class="star_required">*</span>
@@ -52,6 +54,18 @@
                 <option value="119634"></option>
                 <option value="119635"></option>
                 <option value="119636"></option>
+            </datalist>
+            <label for="region">
+                Область
+                <span class="star_required">*</span>
+                <span class="right">Нужно заполнить</span>
+            </label>
+            <input id="region" type="text" placeholder="Москва" list="region_list">
+            <datalist id="region_list">
+                <option value="Москва"></option>
+                <option value="Екатеринбург"></option>
+                <option value="Самара"></option>
+                <option value="Волгоград"></option>
             </datalist>
             <label for="city">
                 Город
