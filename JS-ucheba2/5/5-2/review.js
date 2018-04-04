@@ -22,7 +22,7 @@ class Review {
 
     render(root) {
 
-        console.log(this.reviewArr)
+        console.log(this.reviewArr);
 
         for (let itemKey = 0; itemKey < this.reviewArr.length; itemKey++) {
 

@@ -8,13 +8,22 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bower": "^1.8.4",
     "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-imagemin": "^4.1.0",
-    "gulp-sass": "^3.2.1",
     "gulp-uglifyjs": "^0.6.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-sass": "^3.2.1",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^3.0.0"
+  },
   "description": ""
 }
