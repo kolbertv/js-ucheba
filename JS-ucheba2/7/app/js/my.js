@@ -10,3 +10,8 @@ class a {
 }
 
 console.log('1111111122211111');
+
+function qwerty() {
+    let a = [];
+    let asd= 'привет доброе утро';
+}
