@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdd48bbd-5a7c-4f24-af8c-6e7136af316f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/7/dist/img/lamp1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/7/dist/css/addon.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/7/dist/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/7/dist/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/7/dist/js/big.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/7/dist/js/my.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/.babelrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/scss/index.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/package-lock.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/7/app/scss/addon.scss" afterPath="$PROJECT_DIR$/7/app/scss/addon.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/7/package-lock.json" afterPath="$PROJECT_DIR$/7/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/7/package.json" afterPath="$PROJECT_DIR$/7/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kursach-1/app/index.html" afterPath="$PROJECT_DIR$/kursach-1/app/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,8 +24,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/kursach-1/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+                <state relative-caret-position="573">
+                  <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -142,8 +123,8 @@
         <option value="$PROJECT_DIR$/7/gulpfile.js" />
         <option value="$PROJECT_DIR$/7/app/scss/addon.scss" />
         <option value="$PROJECT_DIR$/kursach-1/app/js/index.js" />
-        <option value="$PROJECT_DIR$/kursach-1/app/index.html" />
         <option value="$PROJECT_DIR$/kursach-1/app/scss/index.scss" />
+        <option value="$PROJECT_DIR$/kursach-1/app/index.html" />
       </list>
     </option>
   </component>
@@ -165,10 +146,10 @@
     <handled-path value="$PROJECT_DIR$/kursach-1/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="102" />
-    <option name="y" value="14" />
+    <option name="x" value="103" />
+    <option name="y" value="39" />
     <option name="width" value="1744" />
-    <option name="height" value="1106" />
+    <option name="height" value="1103" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -296,7 +277,7 @@
       <workItem from="1523019271383" duration="5250000" />
       <workItem from="1523255986530" duration="262000" />
       <workItem from="1523256319389" duration="7760000" />
-      <workItem from="1523276422882" duration="6446000" />
+      <workItem from="1523276422882" duration="6557000" />
     </task>
     <task id="LOCAL-00001" summary="тест гита в вебшторме">
       <created>1522752027301</created>
@@ -333,11 +314,18 @@
       <option name="project" value="LOCAL" />
       <updated>1523024545579</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="курсовик">
+      <created>1523283016806</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1523283016806</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189176000" />
+    <option name="totallyTimeSpent" value="189287000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -349,13 +337,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="102" y="14" width="1744" height="1106" extended-state="0" />
+    <frame x="103" y="39" width="1744" height="1103" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19039352" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780084" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15239155" sideWeight="0.5055494" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5923695" sideWeight="0.4944506" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1691843" sideWeight="0.4944506" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27008033" sideWeight="0.49775282" order="7" side_tool="false" content_ui="tabs" />
@@ -424,7 +413,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="тест гита в вебшторме" />
     <MESSAGE value="изучение gulp" />
-    <option name="LAST_COMMIT_MESSAGE" value="изучение gulp" />
+    <MESSAGE value="курсовик" />
+    <option name="LAST_COMMIT_MESSAGE" value="курсовик" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -596,6 +586,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -603,6 +594,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-151">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -639,8 +631,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kursach-1/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        <state relative-caret-position="573">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>
