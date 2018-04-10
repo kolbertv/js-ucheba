@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px; }
+
+.accountContainer {
+  margin: 0 auto;
+  padding: 30px;
+  width: 1090px;
+  border: none; }
+  .accountContainer__title {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  .accountContainer__main {
+    width: 1090px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between; }
+  .accountContainer__login {
+    width: 48%;
+    height: inherit;
+    border: none;
+    display: flex;
+    flex-direction: column; }
+  .accountContainer__form__title {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 15px auto 10px; }
+  .accountContainer__register {
+    width: 48%;
+    height: inherit;
+    border: none;
+    display: flex;
+    flex-direction: column; }
+  .accountContainer__label {
+    margin-bottom: 5px;
+    display: block;
+    margin-top: 20px; }
+  .accountContainer__input {
+    padding: 10px;
+    border: 1px solid #ebe9eb; }
+  .accountContainer__checkBox {
+    display: inline;
+    margin-top: 15px; }
+  .accountContainer__button {
+    width: 70px;
+    margin-top: 10px;
+    background-color: white;
+    text-transform: uppercase;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ebe9eb; }
+    .accountContainer__button:hover {
+      background-color: #ff749f; }
+  .accountContainer__link {
+    color: #ff749f;
+    margin-top: 30px;
+    text-decoration: underline; }
+
+.starRequired {
+  color: #ff749f; }
