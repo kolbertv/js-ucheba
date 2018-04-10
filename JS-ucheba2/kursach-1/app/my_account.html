@@ -2,9 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Личный кабинет</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
+          rel="stylesheet">
+    <link rel="stylesheet" id=""
+          href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C600%2C700%2C800%7CRaleway%3A400%2C300%2C600%2C500%2C700%2C800&amp;subset=latin%2Clatin-ext&amp;ver=1.0.0"
+          type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/my_account.css">
 </head>
 <body>
-$END$
+<header>
+    <div class="headerContainer">
+        <div class="headerTop">
+            <p class="headerTop__item"><a class="headerTop__link" href="my_account.html">личный кабинет</a></p>
+            <p class="headerTop__item"><a class="headerTop__link" href="">блог</a></p>
+            <p class="headerTop__item"><a class="headerTop__link" href="">хочуха</a></p>
+            <p class="headerTop__item"><a class="headerTop__link" href="">корзина</a></p>
+            <p class="headerTop__item"><a class="headerTop__link" href="">логин</a></p>
+            <p class="headerTop__item"><a class="headerTop__link" href="">регистрация</a></p>
+        </div>
+        <div class="headerMiddle">
+            <a class="headerMiddle__logoLink" href="index.html">детский магазин</a>
+            <input class="headerMiddle__searchInput" type="text" placeholder="Поиск по всему магазину...">
+            <a class="headerMiddle__myAccountLink" href=""></a>
+            <a class="headerMiddle__wishList" href=""></a>
+            <a class="headerMiddle__myCart textBlack" href=""><span>100</span>товаров/<span>10.00</span>руб</a>
+        </div>
+    </div>
+
+    <nav class="nav" id="nav">
+        <p class="nav__item"><a class="nav__link" href="index.html">главная</a></p>
+        <p class="nav__item"><a class="nav__link" href="">одежда</a></p>
+        <p class="nav__item"><a class="nav__link" href="">игры</a></p>
+        <p class="nav__item"><a class="nav__link" href="">игрушки</a></p>
+        <p class="nav__item"><a class="nav__link" href="">обувь</a></p>
+        <p class="nav__item"><a class="nav__link" href="">блог</a></p>
+        <p class="nav__item"><a class="nav__link" href="">продукты</a></p>
+    </nav>
+</header>
+
+<main class="accountContainer">
+
+    <p class="accountContainer__title">Личный кабинет</p>
+    <div class="accountContainer__main">
+        <form action="#" method="post" class="accountContainer__login">
+            <div><h2 class="accountContainer__form__title">Для зарегистрированных пользователей</h2></div>
+            <label class="accountContainer__label" for="newUsername">Имя пользователя или емайл <span class="starRequired">*</span></label>
+            <input class="accountContainer__input"  type="text" id="newUsername">
+            <label class="accountContainer__label" for="newPassword">Пароль <span class="starRequired">*</span></label>
+            <input class="accountContainer__input"   type="text" id="newPassword">
+            <div>
+                <input  class="accountContainer__checkBox"  type="checkbox" id="remeberMe">
+                <label for="remeberMe">Запомнить меня</label>
+            </div>
+            <button class="accountContainer__button">Вход</button>
+            <a class="accountContainer__link" href="">Забыли пароль?</a>
+        </form>
+
+        <form action="" method="post" class="accountContainer__register">
+            <div><h2 class="accountContainer__form__title">Регистрация</h2></div>
+            <label class="accountContainer__label" for="userEmail">Емайл <span class="starRequired">*</span></label>
+            <input class="accountContainer__input"  type="text" id="userEmail">
+            <label class="accountContainer__label" for="userPassword">Пароль <span class="starRequired">*</span></label>
+            <input class="accountContainer__input"   type="text" id="userPassword">
+            <button class="accountContainer__button">Вход</button>
+
+        </form>
+
+    </div>
+
+
+</main>
+
+
 </body>
 </html>

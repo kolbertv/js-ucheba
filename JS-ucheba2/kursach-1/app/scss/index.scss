@@ -16,147 +16,158 @@ body, p, a {
   }
 }
 
-header {
+.headerContainer {
   background-color: $color_pink;
   height: 150px;
 
-  .header_top {
-    width: 1140px;
-    margin: 0 auto;
-    height: 37px;
-    //border: 1px solid black;
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
+}
 
-    p {
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-top: 8px;
+.headerMiddle {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  height: 85px;
+  justify-content: flex-end;
+  align-items: center;
+  white-space: nowrap;
 
-      a {
-        letter-spacing: 0.5px;
-        font-size: 13px;
-        text-transform: capitalize;
-      }
+  &__logoLink {
+    margin-right: 100px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 4px 4px 4px #aaa;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
 
+
+  &__searchInput {
+    height: 30px;
+    width: 445px;
+    padding: 5px;
+    border-radius: $border_radius;
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+      width: 300px;
     }
 
   }
 
-  .header_container_top {
-    width: 1140px;
-    margin: 0 auto;
-
+  &__myAccountLink {
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: $border_radius;
+    margin-left: 15px;
     display: flex;
-    height: 85px;
-    justify-content: flex-end;
     align-items: center;
-    white-space: nowrap;
+    justify-content: center;
 
-    .brand_name {
-      margin-right: 100px;
-      a {
-        font-family: 'Pacifico', cursive;
-        text-shadow: 4px 4px 4px #aaa;
-        text-transform: uppercase;
-        font-size: 20px;
-      }
-
+    &::before {
+      font-family: FontAwesome;
+      content: "\f012";
+      font-size: 18px;
     }
 
-    input {
-      height: 30px;
-      width: 445px;
-      padding: 5px;
-      border-radius: $border_radius;
-
-    }
-
-    :active, :hover, :focus {
-      outline: none;
-      outline-offset: 0;
-
-    }
-
-    .sortlist {
-      height: 40px;
-      width: 40px;
-      border: 1px solid white;
-      border-radius: $border_radius;
-      margin-left: 15px;
-    }
-
-    .wishlist {
-      height: 40px;
-      width: 40px;
-      border: 1px solid white;
-      border-radius: 5px;
-      margin-left: 2px;
-    }
-
-    .my_cart {
-      height: 40px;
-      width: 250px;
-      background-color: white;
-      margin-left: 40px;
-      border-radius: $border_radius;
-      font-size: 12px;
-      font-weight: bold;
-      text-transform: uppercase;
-
-      p:before {
-        font-family: FontAwesome;
-        content: '\f07a';
-        color: $color_pink;
-        display: inline-block;
-        height: 40px;
-        width: 45px;
-        line-height: 40px;
-        text-align: center;
-        border-right: 1px solid #f1f1f1;
-        margin-right: 4px;
-
-      }
-
-    }
-
-    .my_cart:hover {
-      cursor: pointer;
-    }
   }
 
-  .nav_top {
-    margin: 0 auto;
-    width: 1090px;
-    height: 54px;
-    //border: 1px solid black;
-    background-color: $color_pink;
-    position: relative;
-    margin-top: -2px;
+
+  &__wishList {
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 2px;
     display: flex;
-    line-height: 54px;
     align-items: center;
+    justify-content: center;
 
-    p {
+    &::before {
+      font-family: FontAwesome;
+      content: "\f004";
+      font-size: 18px;
+    }
 
-      //border: 1px solid black;
-      border-right: 1px solid rgba(255, 255, 255, 0.5);
-      line-height: 20px;
-      a {
-        //border: 1px solid black;
-        //margin-left: 10px;
-        //margin-right: 10px;
-        font-size: 12px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        padding: 0 18px;
+  }
 
-      }
+  &__myCart {
+    height: 40px;
+    //width: 250px;
+    background-color: white;
+    margin-left: 40px;
+    border-radius: $border_radius;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+
+    &::before {
+      font-family: FontAwesome;
+      content: '\f07a';
+      color: $color_pink;
+      font-size: 18px;
+      display: inline-block;
+      height: 40px;
+      width: 45px;
+      line-height: 40px;
+      text-align: center;
+      border-right: 1px solid #f1f1f1;
+      margin-right: 4px;
     }
   }
-  .nav_top::before {
+}
+
+
+.headerTop {
+  width: 1140px;
+  margin: 0 auto;
+  height: 37px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+
+  &__item {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 8px;
+  }
+
+  &__link {
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    text-transform: capitalize;
+  }
+
+}
+
+.nav {
+  margin: 0 auto;
+  width: 1090px;
+  height: 54px;
+  background-color: $color_pink;
+  position: relative;
+  margin-top: -27px;
+  display: flex;
+  line-height: 54px;
+  align-items: center;
+
+  &__item {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    line-height: 20px;
+  }
+
+  &__link {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 18px;
+
+  }
+
+  &::before {
     width: 0;
     height: 0;
     border-right: 25px solid #ff749f;
@@ -166,7 +177,7 @@ header {
     position: absolute;
     margin-left: -24px;
   }
-  .nav_top::after {
+  &::after {
     width: 0;
     height: 0;
     border-left: 25px solid #ff749f;
@@ -182,31 +193,45 @@ header {
 
 }
 
-main {
+.slideShow {
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 500px;
+  width: 1090px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-  .container {
-    margin: 0 auto;
-    margin-top: 50px;
-    height: 500px;
-    width: 1090px;
+  &__baner {
+    width: 80%;
+    height: inherit;
+    background-color: rgb(243, 243, 243);
     border: 1px solid black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  }
 
-    .baner {
-      width: 800px;
-      height: inherit;
-      background-color: rgb(243, 243, 243);
-      border: 1px solid black;
-    }
-
-    .gifs {
-      height: 400px;
-      width: 250px;
-      border: 1px solid black;
-      background-color: rgb(243, 243, 243);
-    }
+  &__gifs {
+    height: 400px;
+    width: 30%;
+    border: 1px solid black;
+    background-color: rgb(243, 243, 243);
+  }
+  &__itemImg {
+    width: 800px;
+    height: inherit;
   }
 
 }
+
+.textWhite {
+  color: white;
+}
+
+.textBlack {
+  color: black;
+}
+
+.textPink {
+  color: $color_pink;
+}
+

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Детский магазин</title>
-    <link href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" rel="stylesheet">
     <link rel="stylesheet" id=""
           href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C600%2C700%2C800%7CRaleway%3A400%2C300%2C600%2C500%2C700%2C800&amp;subset=latin%2Clatin-ext&amp;ver=1.0.0"
           type="text/css" media="all">
@@ -16,52 +17,47 @@
 
 
 <header>
-
-    <div class="header_container">
-        <div class="header_top">
-            <p><a href="">личный кабинет</a></p>
-            <p><a href="">блог</a></p>
-            <p><a href="">хочуха</a></p>
-            <p><a href="">корзина</a></p>
-            <p><a href="">логин</a></p>
-            <p><a href="">регистрация</a></p>
+    <div class="headerContainer">
+        <div class="headerTop">
+            <p class="headerTop__item"><a class="headerTop__link" href="my_account.html">личный кабинет</a></p>
+            <p class="headerTop__item"><a class="headerTop__link" href="">блог</a></p>
+            <p class="headerTop__item"><a class="headerTop__link" href="">хочуха</a></p>
+            <p class="headerTop__item"><a class="headerTop__link" href="">корзина</a></p>
+            <p class="headerTop__item"><a class="headerTop__link" href="">логин</a></p>
+            <p class="headerTop__item"><a class="headerTop__link" href="">регистрация</a></p>
         </div>
-        <div class="header_container_top">
-            <p class="brand_name"><a href="">детский магазин</a></p>
-            <input type="text" placeholder="Поиск по всему магазину...">
-            <div class="sortlist">
-            </div>
-            <div class="wishlist">
-            </div>
-            <div class="my_cart">
-                <p><span class="color_text">100</span> товаров/ <span>10.00</span>руб</p>
-            </div>
+        <div class="headerMiddle">
+            <a class="headerMiddle__logoLink" href="#">детский магазин</a>
+            <input class="headerMiddle__searchInput" type="text" placeholder="Поиск по всему магазину...">
+            <a class="headerMiddle__myAccountLink" href=""></a>
+            <a class="headerMiddle__wishList" href=""></a>
+            <a class="headerMiddle__myCart textBlack" href=""><span>100</span>товаров/<span>10.00</span>руб</a>
         </div>
     </div>
 
-    <nav class="nav_top" id="nav_top">
-        <p><a href="">главная</a></p>
-        <p><a href="">одежда</a></p>
-        <p><a href="">игры</a></p>
-        <p><a href="">игрушки</a></p>
-        <p><a href="">обувь</a></p>
-        <p><a href="">блог</a></p>
-        <p><a href="">продукты</a></p>
+    <nav class="nav" id="nav">
+        <p class="nav__item"><a class="nav__link" href="#">главная</a></p>
+        <p class="nav__item"><a class="nav__link" href="">одежда</a></p>
+        <p class="nav__item"><a class="nav__link" href="">игры</a></p>
+        <p class="nav__item"><a class="nav__link" href="">игрушки</a></p>
+        <p class="nav__item"><a class="nav__link" href="">обувь</a></p>
+        <p class="nav__item"><a class="nav__link" href="">блог</a></p>
+        <p class="nav__item"><a class="nav__link" href="">продукты</a></p>
     </nav>
 </header>
 
-<main>
-    <div class="container">
 
-        <div class="baner"></div>
-
-        <div class="gifs">
-            <p>подарки для детей</p>
-
+<main class="main">
+    <div class="slideShow">
+        <div class="slideShow__baner">
+            <img class="slideShow__itemImg"src="img/slide-img2.jpg" alt="">
         </div>
 
+        <div class="slideShow__gifs">
+            <p>подарки для детей</p>
+            <p><a href="">подарки для детей</a></p>
+        </div>
     </div>
-
 </main>
 
 <!-- build:js js/main.js -->

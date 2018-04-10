@@ -1,0 +1,101 @@
+$border_test: none;
+//$border_test: 1px solid black;
+$border_radius: 3px;
+$color_pink: #ff749f;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.accountContainer {
+  margin: 0 auto;
+  padding: 30px;
+  width: 1090px;
+  border: $border_test;
+
+  &__title {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__main {
+    width: 1090px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__login {
+    width: 48%;
+    height: inherit;
+    border: $border_test;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__form__title {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 15px auto 10px;
+  }
+
+  &__register {
+    width: 48%;
+    height: inherit;
+    border: $border_test;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    margin-bottom: 5px;
+    display: block;
+    margin-top: 20px;
+  }
+
+  &__input {
+    padding: 10px;
+    border: 1px solid #ebe9eb;
+  }
+
+  &__checkBox {
+    display: inline;
+    margin-top: 15px;
+  }
+
+  &__button {
+    width: 70px;
+    margin-top: 10px;
+    background-color: white;
+    text-transform: uppercase;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ebe9eb;
+
+    &:hover {
+      background-color: $color_pink;
+    }
+
+  }
+
+  &__link {
+    color: $color_pink;
+    margin-top: 30px;
+    text-decoration: underline;
+  }
+
+}
+
+.starRequired {
+  color: $color_pink;
+}
+
+
