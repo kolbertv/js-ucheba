@@ -1,0 +1,118 @@
+[
+  {
+    "id_product": 1,
+    "product_name": "Aarika Baby Girls’ Party Wear Frock",
+    "imgName": "product5-3.jpg",
+    "price": 55,
+    "quantity": 10,
+    "currency": "rub",
+    "gender": "g",
+    "quickOverview": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest.",
+    "starReview": [
+      {
+        "1": 5,
+        "2": 4
+      }
+    ],
+    "customerReview": [
+      {
+        "1": "Отлично",
+        "2": "Отлично"
+      }
+    ]
+  },
+  {
+    "id_product": 2,
+    "product_name": "Bio Kid Blooming Rose",
+    "imgName": "product7-7.jpg",
+    "price": 40,
+    "quantity": 10,
+    "currency": "rub",
+    "gender": "g",
+    "quickOverview": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest.",
+    "starReview": [
+      {
+        "1": 5,
+        "2": 4
+      }
+    ],
+    "customerReview": [
+      {
+        "1": "Отлично",
+        "2": "Отлично"
+      }
+    ]
+  },
+  {
+    "id_product": 3,
+    "product_name": "Disney Boys’ T-Shirt",
+    "imgName": "product8-5.jpg",
+    "price": 40,
+    "quantity": 10,
+    "currency": "rub",
+    "gender": "b",
+    "quickOverview": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest.",
+    "starReview": [
+      {
+        "1": 5,
+        "2": 4
+      }
+    ],
+    "customerReview": [
+      {
+        "1": "Отлично",
+        "2": "Отлично"
+      }
+    ]
+  },
+  {
+    "id_product": 4,
+    "product_name": "UCB KIDS Boys’ Polo",
+    "imgName": "product10-6.jpg",
+    "price": 40,
+    "quantity": 10,
+    "currency": "rub",
+    "gender": "b",
+    "quickOverview": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest.",
+    "starReview": [
+      {
+        "1": 5,
+        "2": 4
+      }
+    ],
+    "customerReview": [
+      {
+        "1": "Отлично",
+        "2": "Отлично"
+      }
+    ]
+  },
+  {
+    "id_product": 5,
+    "product_name": "Batman Boys’ T-Shirt",
+    "imgName": "product4-4.jpg",
+    "price": 40,
+    "quantity": 10,
+    "currency": "rub",
+    "gender": "b",
+    "quickOverview": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest.",
+    "starReview": [
+      {
+        "1": 5,
+        "2": 4
+      }
+    ],
+    "customerReview": [
+      {
+        "1": "Отлично",
+        "2": "Отлично"
+      }
+    ]
+  }
+
+]

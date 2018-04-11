@@ -23,6 +23,7 @@ let path = {
         babel: 'app/babel/*.js',
         img: 'app/img/*.*',
         fonts: 'app/fonts/*.*',
+        json: 'app/json/*.*',
     },
 
     dist: {
@@ -31,6 +32,7 @@ let path = {
         js: 'dist/js',
         img: 'dist/img',
         fonts: 'dist/fonts',
+        json: 'dist/json',
         babel: 'app/babel',
     },
 
@@ -40,6 +42,7 @@ let path = {
         css: 'app/**/*.css',
         sass: 'app/**/*.sass',
         js: 'app/**/*.js',
+        json: 'app/**/*.json',
         babel: 'app/babel/*.js',
     },
 
@@ -57,7 +60,7 @@ let serverConfig = {
 };
 
 // gulp.task('build', ['html', 'sass', 'babel', 'compress', 'concat']);
-gulp.task('build', ['html', 'sass', 'babel', 'img']);
+gulp.task('build', ['html', 'sass', 'babel', 'img', 'json']);
 
 gulp.task('default', ['build', 'myWatch', 'server'], function () {
     console.log('галп работает по умолчанию')
@@ -113,12 +116,20 @@ gulp.task('img', function () {
         .pipe(reload({stream: true}));
 });
 
+gulp.task('json', function () {
+    gulp.src(path.app.json)
+        .pipe(gulp.dest(path.dist.json))
+        .pipe(reload({stream: true}));
+});
+
+
 
 gulp.task('myWatch', function () {
     gulp.watch(path.watch.scss, ['sass']);
     gulp.watch(path.watch.html, ['html']);
     gulp.watch(path.watch.babel, ['compress']);
     gulp.watch(path.watch.js, ['babel']);
+    gulp.watch(path.watch.json, ['json']);
 
 });
 
