@@ -2,19 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdd48bbd-5a7c-4f24-af8c-6e7136af316f" name="Default" comment="курсовик">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/img/product1-6-290x340.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/img/slide-img2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/img/product1-6-290x340.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/img/slide-img2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/my_account.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/scss/my_account.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/css/my_account.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/my_account.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/img/product1-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/img/product20-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/img/product4-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/img/product5-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/img/product7-7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/img/product8-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/json/API Description.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/img/product1-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/img/product20-6.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/img/product4-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/img/product5-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/img/product7-7.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/img/product8-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/json/API Description.xlsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/components/button/button.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/json/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/json/addReview.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/json/addToBasket.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/json/approveReview.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/json/catalogData.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/json/changeUserData.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/json/deleteFromBasket.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/json/getBasket.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/json/getGoodById.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/json/login.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/json/logout.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/json/registerUser.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/app/json/removeReview.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/json/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/json/addReview.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/json/addToBasket.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/json/approveReview.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/json/catalogData.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/json/changeUserData.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/json/deleteFromBasket.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/json/getBasket.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/json/getGoodById.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/json/login.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/json/logout.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/json/registerUser.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/kursach-1/dist/json/removeReview.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kursach-1/app/img/product1-6-290x340.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kursach-1/app/index.html" afterPath="$PROJECT_DIR$/kursach-1/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kursach-1/app/scss/index.scss" afterPath="$PROJECT_DIR$/kursach-1/app/scss/index.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kursach-1/dist/css/index.css" afterPath="$PROJECT_DIR$/kursach-1/dist/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kursach-1/dist/index.html" afterPath="$PROJECT_DIR$/kursach-1/dist/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kursach-1/gulpfile.js" afterPath="$PROJECT_DIR$/kursach-1/gulpfile.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,24 +64,24 @@
   </component>
   <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.479638">
+    <splitter split-orientation="horizontal" split-proportion="0.57239974">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/kursach-1/app/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="10" selection-end-column="83" />
+                <state relative-caret-position="324">
+                  <caret line="118" column="38" lean-forward="false" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="my_account.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="my_account.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kursach-1/app/my_account.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="221">
-                  <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+                  <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
                   <folding />
                 </state>
               </provider>
@@ -56,34 +91,54 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/kursach-1/app/scss/index.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="21" />
+                <state relative-caret-position="172">
+                  <caret line="422" column="18" lean-forward="true" selection-start-line="422" selection-start-column="18" selection-end-line="422" selection-end-column="18" />
                   <folding>
-                    <element signature="e#56#81#0" expanded="false" />
-                    <element signature="e#94#220#0" expanded="false" />
-                    <element signature="e#239#293#0" expanded="false" />
-                    <element signature="e#309#2084#0" expanded="false" />
-                    <element signature="e#2098#2406#0" expanded="false" />
-                    <element signature="e#2413#3340#0" expanded="false" />
-                    <element signature="e#2849#3069#0" expanded="false" />
-                    <element signature="e#3081#3337#0" expanded="false" />
-                    <element signature="e#3353#3836#0" expanded="false" />
-                    <element signature="e#3849#3868#0" expanded="false" />
-                    <element signature="e#3881#3900#0" expanded="false" />
-                    <element signature="e#3912#3937#0" expanded="false" />
+                    <element signature="e#149#174#0" expanded="false" />
+                    <element signature="e#187#335#0" expanded="false" />
+                    <element signature="e#354#408#0" expanded="false" />
+                    <element signature="e#424#2197#0" expanded="false" />
+                    <element signature="e#2210#2518#0" expanded="false" />
+                    <element signature="e#2525#3457#0" expanded="false" />
+                    <element signature="e#2966#3186#0" expanded="false" />
+                    <element signature="e#3198#3454#0" expanded="false" />
+                    <element signature="e#3470#3953#0" expanded="false" />
+                    <element signature="e#3966#3985#0" expanded="false" />
+                    <element signature="e#3998#4017#0" expanded="false" />
+                    <element signature="e#4029#4054#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="my_account.scss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="my_account.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/kursach-1/app/scss/my_account.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+                <state relative-caret-position="119">
+                  <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="button.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kursach-1/app/components/button/button.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/kursach-1/app/js/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -163,10 +218,13 @@
         <option value="$PROJECT_DIR$/7/gulpfile.js" />
         <option value="$PROJECT_DIR$/7/app/scss/addon.scss" />
         <option value="$PROJECT_DIR$/kursach-1/app/js/index.js" />
-        <option value="$PROJECT_DIR$/kursach-1/app/scss/index.scss" />
-        <option value="$PROJECT_DIR$/kursach-1/app/index.html" />
         <option value="$PROJECT_DIR$/kursach-1/app/scss/my_account.scss" />
         <option value="$PROJECT_DIR$/kursach-1/app/my_account.html" />
+        <option value="$PROJECT_DIR$/kursach-1/app/components/button/button.scss" />
+        <option value="$PROJECT_DIR$/kursach-1/app/json/catalogData.json" />
+        <option value="$PROJECT_DIR$/kursach-1/gulpfile.js" />
+        <option value="$PROJECT_DIR$/kursach-1/app/scss/index.scss" />
+        <option value="$PROJECT_DIR$/kursach-1/app/index.html" />
       </list>
     </option>
   </component>
@@ -188,10 +246,10 @@
     <handled-path value="$PROJECT_DIR$/kursach-1/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="56" />
-    <option name="y" value="18" />
-    <option name="width" value="1773" />
-    <option name="height" value="1109" />
+    <option name="x" value="102" />
+    <option name="y" value="15" />
+    <option name="width" value="1749" />
+    <option name="height" value="1132" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -225,6 +283,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -233,42 +292,10 @@
               <item name="JS-ucheba2" type="b2602c69:ProjectViewProjectNode" />
               <item name="JS-ucheba2" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="JS-ucheba2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JS-ucheba2" type="462c0819:PsiDirectoryNode" />
-              <item name="kursach-1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JS-ucheba2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JS-ucheba2" type="462c0819:PsiDirectoryNode" />
-              <item name="kursach-1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JS-ucheba2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JS-ucheba2" type="462c0819:PsiDirectoryNode" />
-              <item name="kursach-1" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JS-ucheba2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JS-ucheba2" type="462c0819:PsiDirectoryNode" />
-              <item name="kursach-1" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JS-ucheba2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JS-ucheba2" type="462c0819:PsiDirectoryNode" />
-              <item name="kursach-1" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -348,6 +375,8 @@
       <workItem from="1523276422882" duration="6557000" />
       <workItem from="1523336005930" duration="12252000" />
       <workItem from="1523361555220" duration="5148000" />
+      <workItem from="1523428340013" duration="8799000" />
+      <workItem from="1523444314953" duration="9453000" />
     </task>
     <task id="LOCAL-00001" summary="тест гита в вебшторме">
       <created>1522752027301</created>
@@ -395,7 +424,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206687000" />
+    <option name="totallyTimeSpent" value="224939000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -407,16 +436,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="18" width="1773" height="1109" extended-state="0" />
+    <frame x="102" y="15" width="1749" height="1132" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.119521916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15118292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32780084" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15239155" sideWeight="0.5055494" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45745745" sideWeight="0.4944506" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45694715" sideWeight="0.4944506" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3133133" sideWeight="0.49775282" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27005872" sideWeight="0.49775282" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -493,27 +522,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/6/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6/scss/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="51" lean-forward="false" selection-start-line="0" selection-start-column="51" selection-end-line="0" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2/lesson2/menu/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/bower/lib/node_modules/dashdash/etc/dashdash.bash_completion.in" />
     <entry file="file://$PROJECT_DIR$/6/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -645,20 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kursach-1/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kursach-1/app/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/phrase.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -667,48 +661,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/kursach-1/app/my_account.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="53" lean-forward="false" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kursach-1/app/scss/my_account.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kursach-1/app/components/button/button.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kursach-1/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="133" column="3" lean-forward="true" selection-start-line="133" selection-start-column="3" selection-end-line="133" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kursach-1/app/json/catalogData.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="117" column="1" lean-forward="true" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kursach-1/app/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kursach-1/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/kursach-1/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="10" selection-end-column="83" />
+        <state relative-caret-position="324">
+          <caret line="118" column="38" lean-forward="false" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kursach-1/app/scss/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="21" />
+        <state relative-caret-position="172">
+          <caret line="422" column="18" lean-forward="true" selection-start-line="422" selection-start-column="18" selection-end-line="422" selection-end-column="18" />
           <folding>
-            <element signature="e#56#81#0" expanded="false" />
-            <element signature="e#94#220#0" expanded="false" />
-            <element signature="e#239#293#0" expanded="false" />
-            <element signature="e#309#2084#0" expanded="false" />
-            <element signature="e#2098#2406#0" expanded="false" />
-            <element signature="e#2413#3340#0" expanded="false" />
-            <element signature="e#2849#3069#0" expanded="false" />
-            <element signature="e#3081#3337#0" expanded="false" />
-            <element signature="e#3353#3836#0" expanded="false" />
-            <element signature="e#3849#3868#0" expanded="false" />
-            <element signature="e#3881#3900#0" expanded="false" />
-            <element signature="e#3912#3937#0" expanded="false" />
+            <element signature="e#149#174#0" expanded="false" />
+            <element signature="e#187#335#0" expanded="false" />
+            <element signature="e#354#408#0" expanded="false" />
+            <element signature="e#424#2197#0" expanded="false" />
+            <element signature="e#2210#2518#0" expanded="false" />
+            <element signature="e#2525#3457#0" expanded="false" />
+            <element signature="e#2966#3186#0" expanded="false" />
+            <element signature="e#3198#3454#0" expanded="false" />
+            <element signature="e#3470#3953#0" expanded="false" />
+            <element signature="e#3966#3985#0" expanded="false" />
+            <element signature="e#3998#4017#0" expanded="false" />
+            <element signature="e#4029#4054#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kursach-1/app/scss/my_account.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kursach-1/app/my_account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
