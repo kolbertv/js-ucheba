@@ -202,7 +202,7 @@ body, p, a {
     overflow-x: hidden;
     padding-bottom: 5px; }
   .dropdownCart_mod {
-    display: none; }
+    display: block; }
   .dropdownCart__item {
     height: 100px;
     width: 100%;
@@ -252,8 +252,10 @@ body, p, a {
 .button {
   box-shadow: none;
   outline: none;
+  border-color: transparent;
+  border-style: none;
   background-color: transparent;
-  border: 1px solid #ddd; }
+  transition-duration: 200ms; }
   .button:hover {
     cursor: pointer; }
 
@@ -293,13 +295,11 @@ body, p, a {
     justify-content: space-between;
     height: 30px; }
   .gallery__itemContainer {
-    width: 1090px;
-    box-sizing: border-box;
-    overflow: auto; }
+    width: 1090px; }
   .gallery__itemWrapper {
     display: flex;
     justify-content: space-between;
-    width: 1520px; }
+    margin-top: 15px; }
   .gallery__item {
     width: 200px;
     height: 410px;
@@ -307,11 +307,23 @@ body, p, a {
     flex-direction: column;
     align-items: center;
     border: 1px solid black; }
+    .gallery__item:hover {
+      cursor: pointer; }
+  .gallery__containerItemImg {
+    overflow: hidden; }
   .gallery__itemImg {
-    height: 240px; }
+    height: 240px;
+    transition-duration: 500ms; }
+    .gallery__itemImg:hover {
+      -webkit-transform: scale(1.2, 1.2);
+              transform: scale(1.2, 1.2); }
   .gallery__itemButton {
     padding: 8px 12px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    border: 1px solid #ddd; }
+    .gallery__itemButton:hover {
+      color: white;
+      background-color: #ff749f; }
   .gallery__itemTitle {
     padding-top: 10px;
     padding-left: 10px;

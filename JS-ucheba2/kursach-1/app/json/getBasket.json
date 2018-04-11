@@ -1,18 +1,18 @@
 {
-  "amount": 46600,
-  "countGoods": 2,
+  "amount": 230,
+  "countGoods": 5,
   "contents": [
     {
-      "id_product": 123,
-      "product_name": "Ноутбук",
-      "price": 45600,
-      "quantity": 1
+      "id_product": 1,
+      "product_name": "Aarika Baby Girls’ Party Wear Frock",
+      "price": 55,
+      "quantity": 2
     },
     {
-      "id_product": 456,
-      "product_name": "Мышка",
-      "price": 1000,
-      "quantity": 1
+      "id_product": 2,
+      "product_name": "Bio Kid Blooming Rose",
+      "price": 40,
+      "quantity": 3
     }
   ]
 }

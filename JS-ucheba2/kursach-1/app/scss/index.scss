@@ -273,7 +273,7 @@ body, p, a {
   }
 
   &_mod {
-    display: none;
+    display: block;
   }
 
   &__item {
@@ -348,10 +348,10 @@ body, p, a {
 .button {
   box-shadow: none;
   outline: none;
-  //border-color: transparent;
-  //border-style: none;
+  border-color: transparent;
+  border-style: none;
   background-color: transparent;
-  border: 1px solid #ddd;
+  transition-duration: 200ms;
 
   &:hover {
     cursor: pointer;
@@ -403,18 +403,18 @@ body, p, a {
     align-items: baseline;
   }
 
- &__headerWrapper__controls {
-   display: flex;
-   width: 70px;
-   justify-content: space-between;
-   height: 30px;
-   //border: $border_test;
- }
+  &__headerWrapper__controls {
+    display: flex;
+    width: 70px;
+    justify-content: space-between;
+    height: 30px;
+    //border: $border_test;
+  }
 
   &__itemContainer {
     width: $width_1200;
-    box-sizing: border-box;
-    overflow: auto;
+    //box-sizing: border-box;
+    //overflow: auto;
     //overflow-x: hidden;
 
   }
@@ -422,29 +422,51 @@ body, p, a {
   &__itemWrapper {
     display: flex;
     justify-content: space-between;
-    width: 1520px;
+    //width: 1520px;
+    margin-top: 15px;
   }
 
-  &__item{
+  &__item {
     width: 200px;
     height: 410px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    &:hover {
+      cursor: pointer;
+
+    }
+
     border: $border_test;
   }
 
+  &__containerItemImg {
+    overflow: hidden;
+  }
   &__itemImg {
     height: 240px;
+    transition-duration: 500ms;
+
+    &:hover {
+      transform: scale(1.2,1.2)
+    }
+
   }
 
-  &__itemButton{
+  &__itemButton {
     padding: 8px 12px;
     margin-top: 10px;
+    border: 1px solid #ddd;
+
+
+    &:hover {
+      color: white;
+      background-color: $color_pink;
+    }
   }
 
-  &__itemTitle{
+  &__itemTitle {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
