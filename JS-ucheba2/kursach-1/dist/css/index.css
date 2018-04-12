@@ -184,7 +184,7 @@ body, p, a {
 .dropdownCart {
   position: absolute;
   background-color: white;
-  height: 450px;
+  max-height: 450px;
   width: 330px;
   top: 62px;
   border: 1px solid #eee;
@@ -196,7 +196,7 @@ body, p, a {
   .dropdownCart:hover {
     display: block; }
   .dropdownCart__wraper {
-    height: 400px;
+    max-height: 400px;
     box-sizing: border-box;
     overflow-y: auto;
     overflow-x: hidden;
@@ -240,7 +240,8 @@ body, p, a {
   .dropdownCart__buttonWrapper {
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    padding-bottom: 10px; }
   .dropdownCart__button_mod {
     background-color: #eee;
     margin-top: 10px;

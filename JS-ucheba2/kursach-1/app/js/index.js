@@ -9,37 +9,35 @@
  * @param wrapperClass название класса единицы товара
  */
 
-function getJson(jsonFile, callback, wrapperClass) {
+function getJson(jsonFile, callback) {
 
     let xhr = new XMLHttpRequest();
     xhr.open('GET', 'json/' + jsonFile, true);
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            console.log('статус готово');
-            callback(JSON.parse(xhr.responseText), wrapperClass);
+            // console.log('статус готово');
+            // callback(JSON.parse(xhr.responseText), wrapperClass);
+            callback((xhr.responseText));
         } else {
-            console.log('статус готовности ' + xhr.readyState);
-            console.log('статус ' + xhr.status);
+            // console.log('статус готовности ' + xhr.readyState);
+            // console.log('статус ' + xhr.status);
         }
     };
     xhr.send();
 }
 
-function consoleLog(data) {
-
-    console.log(data);
-
-}
+// function consoleLog(data) {s
+//
+//     console.log(data);
+//
+// }
 
 
 
 
 window.onload = function () {
-
-    console.log('страница загружена');
-
-    getJson('getBasket.json', mini_cart.render, 'dropdownCart__')
-
+    getJson('getBasket.json', data =>miniCart.init(data, 'dropdownCart'));
+    getJson('catalogData.json', data => loadCatalogData.init(data));
 
 };
 
