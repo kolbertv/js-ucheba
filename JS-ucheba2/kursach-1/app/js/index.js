@@ -6,7 +6,6 @@
  * @param jsonFile
  * @param callback Функция в которую возвращаем результат PARSE и название
  * класса обертки товара
- * @param wrapperClass название класса единицы товара
  */
 
 function getJson(jsonFile, callback) {
@@ -25,15 +24,6 @@ function getJson(jsonFile, callback) {
     };
     xhr.send();
 }
-
-// function consoleLog(data) {s
-//
-//     console.log(data);
-//
-// }
-
-
-
 
 window.onload = function () {
     getJson('getBasket.json', data =>miniCart.init(data, 'dropdownCart'));

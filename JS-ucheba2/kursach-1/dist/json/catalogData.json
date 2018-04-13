@@ -5,22 +5,11 @@
     "imgName": "product5-3.jpg",
     "price": 55,
     "quantity": 10,
-    "currency": "rub",
+    "currency": "руб.",
     "gender": "g",
     "quickOverview": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest.",
-    "starReview": [
-      {
-        "1": 5,
-        "2": 4
-      }
-    ],
-    "customerReview": [
-      {
-        "1": "Отлично",
-        "2": "Отлично"
-      }
-    ]
+    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest."
+
   },
   {
     "id_product": 2,
@@ -28,22 +17,11 @@
     "imgName": "product7-7.jpg",
     "price": 40,
     "quantity": 10,
-    "currency": "rub",
+    "currency": "руб.",
     "gender": "g",
     "quickOverview": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest.",
-    "starReview": [
-      {
-        "1": 5,
-        "2": 4
-      }
-    ],
-    "customerReview": [
-      {
-        "1": "Отлично",
-        "2": "Отлично"
-      }
-    ]
+    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest."
+
   },
   {
     "id_product": 3,
@@ -51,22 +29,11 @@
     "imgName": "product8-5.jpg",
     "price": 40,
     "quantity": 10,
-    "currency": "rub",
+    "currency": "руб.",
     "gender": "b",
     "quickOverview": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest.",
-    "starReview": [
-      {
-        "1": 5,
-        "2": 4
-      }
-    ],
-    "customerReview": [
-      {
-        "1": "Отлично",
-        "2": "Отлично"
-      }
-    ]
+    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest."
+
   },
   {
     "id_product": 4,
@@ -74,22 +41,11 @@
     "imgName": "product10-6.jpg",
     "price": 40,
     "quantity": 10,
-    "currency": "rub",
+    "currency": "руб.",
     "gender": "b",
     "quickOverview": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest.",
-    "starReview": [
-      {
-        "1": 5,
-        "2": 4
-      }
-    ],
-    "customerReview": [
-      {
-        "1": "Отлично",
-        "2": "Отлично"
-      }
-    ]
+    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest."
+
   },
   {
     "id_product": 5,
@@ -97,22 +53,48 @@
     "imgName": "product4-4.jpg",
     "price": 40,
     "quantity": 10,
-    "currency": "rub",
+    "currency": "руб.",
     "gender": "b",
     "quickOverview": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest.",
-    "starReview": [
-      {
-        "1": 5,
-        "2": 4
-      }
-    ],
-    "customerReview": [
-      {
-        "1": "Отлично",
-        "2": "Отлично"
-      }
-    ]
+    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest."
+
+  },
+  {
+    "id_product": 6,
+    "product_name": "Avengers Boys’ T-Shirt",
+    "imgName": "product20-6.jpg",
+    "price": 40,
+    "quantity": 10,
+    "currency": "руб.",
+    "gender": "b",
+    "quickOverview": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest."
+
+  },
+  {
+    "id_product": 7,
+    "product_name": "Bio Kid Designer T Shirt",
+    "imgName": "product17-6.jpg",
+    "price": 40,
+    "quantity": 10,
+    "currency": "руб.",
+    "gender": "b",
+    "quickOverview": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest."
+
+  }
+  ,
+  {
+    "id_product": 8,
+    "product_name": "Aarika Baby Girls’ Party Wear Frock",
+    "imgName": "product5-3.jpg",
+    "price": 40,
+    "quantity": 10,
+    "currency": "руб.",
+    "gender": "b",
+    "quickOverview": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "description": "Blue colour self design casual shirt, made with 100% cotton, slim fit, mandarin collar with a full buttoned chest placket, single chest patch pocket, full sleeve with buttoned cuffs, brand embroidery at the left side of the chest."
+
   }
 
 ]
