@@ -1,0 +1,27 @@
+/*
+* подключение чужих файлов стилей
+*  @import "../../bower_components/normalize.css/*.css";
+*/
+
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-resolution: 2dppx) {
+  .image {
+    background-image: url(image@2x.png);
+  }
+}
+
+
+/*
+* Подключение своих файлов стилей
+* @import "parts/*.css";
+*/
+
+
+
