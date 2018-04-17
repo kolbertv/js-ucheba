@@ -5,9 +5,10 @@
  * //= ../../bower_components/jquery/dist/jquery.js
  */
 
-
-
 /*
  * Подлючение своих файлов JS для сборки
- * //= partials/app.js
+ * //= parts/app.js
  */
+
+//= parts/header.js
+//= parts/footer.js
