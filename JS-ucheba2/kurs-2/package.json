@@ -8,6 +8,7 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
+    "bower": "^1.8.4",
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
@@ -18,6 +19,7 @@
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-util": "^3.0.8",
     "gulp-watch": "^5.0.0",
     "imagemin-pngquant": "^5.1.0",
     "rimraf": "^2.6.2"

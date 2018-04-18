@@ -3,20 +3,53 @@
 *  @import "../../bower_components/normalize.css/*.css";
 */
 
-@import "parts/header.scss";
+$border_radius: 3px;
+$color_pink: #ff749f;
+$color_blue: #84d8ea;
+$color_gray: #eee;
+$border_test: none;
+//$border_test: 1px solid black;
+$width_1200: 1090px;
 
-
-
-body {
-  padding: 0;
+body, p, a {
   margin: 0;
-}
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 
-@media (min-resolution: 2dppx) {
-  .image {
-    background-image: url(image@2x.png);
+  a {
+    text-decoration: none;
+    color: white;
   }
 }
+
+.textWhite {
+  color: white;
+}
+
+.textBlack {
+  color: black;
+}
+
+.textPink {
+  color: $color_pink;
+}
+
+.main {
+  margin: 0 auto;
+  width: $width_1200;
+}
+
+@import "parts/button.scss";
+@import "parts/header.scss";
+@import "parts/dropdowncart.scss";
+@import "parts/catalog.scss";
+@import "parts/nav.scss";
+
+
+
+@import "parts/footer.scss";
+
 
 
 /*
@@ -24,6 +57,6 @@ body {
 * @import "parts/*.css";
 */
 
-@import "parts/footer.scss";
+
 
 

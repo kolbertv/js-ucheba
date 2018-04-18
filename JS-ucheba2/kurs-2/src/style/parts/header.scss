@@ -1,3 +1,132 @@
-div {
-  border: 1px;
+.headerContainer {
+  background-color: $color_pink;
+  height: 150px;
+
 }
+
+.headerMiddle {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  height: 85px;
+  justify-content: flex-end;
+  align-items: center;
+  white-space: nowrap;
+
+  &__logoLink {
+    margin-right: 100px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 4px 4px 4px #aaa;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  &__searchInput {
+    height: 30px;
+    width: 445px;
+    padding: 5px;
+    border-radius: $border_radius;
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+      width: 300px;
+    }
+
+  }
+
+  &__myAccountLink {
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: $border_radius;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      font-family: FontAwesome;
+      content: "\f012";
+      font-size: 18px;
+    }
+
+  }
+
+  &__wishList {
+    height: 40px;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      font-family: FontAwesome;
+      content: "\f004";
+      font-size: 18px;
+    }
+
+  }
+
+  &__myCart {
+    height: 40px;
+    //width: 250px;
+    background-color: white;
+    margin-left: 40px;
+    border-radius: $border_radius;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+
+    &::before {
+      font-family: FontAwesome;
+      content: '\f07a';
+      color: $color_pink;
+      font-size: 18px;
+      display: inline-block;
+      height: 40px;
+      width: 45px;
+      line-height: 40px;
+      text-align: center;
+      border-right: 1px solid #f1f1f1;
+      margin-right: 4px;
+    }
+  }
+}
+
+.headerTop {
+  width: 1140px;
+  margin: 0 auto;
+  height: 37px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+
+  &__item {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 8px;
+  }
+
+  &__link {
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    text-transform: capitalize;
+  }
+
+}
+
+
+.headerMiddle {
+  position: relative;
+}
+
+.headerMiddle__myCart_mod:hover ~ .dropdownCart_mod {
+  display: block;
+}
+

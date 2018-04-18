@@ -1,0 +1,28 @@
+{
+  "amount": 230,
+  "countGoods": 5,
+  "contents": [
+    {
+      "id_product": 1,
+      "img": "product5-3.jpg",
+      "product_name": "Aarika Baby Girls’ Party Wear Frock",
+      "price": 55,
+      "quantity": 2
+    },
+    {
+      "id_product": 2,
+      "img": "product7-7.jpg",
+      "product_name": "Bio Kid Blooming Rose",
+      "price": 40,
+      "quantity": 3
+    },
+
+    {
+      "id_product": 5,
+      "img": "product4-4.jpg",
+      "product_name": "Batman Boys' T-Shirt",
+      "price": 40,
+      "quantity": 3
+    }
+  ]
+}

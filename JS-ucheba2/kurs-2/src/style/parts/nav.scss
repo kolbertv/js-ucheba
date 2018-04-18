@@ -1,0 +1,50 @@
+.nav {
+  margin: 0 auto;
+  width: $width_1200;
+  height: 54px;
+  background-color: $color_pink;
+  position: relative;
+  margin-top: -27px;
+  display: flex;
+  line-height: 54px;
+  align-items: center;
+
+  &__item {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    line-height: 20px;
+  }
+
+  &__link {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0 18px;
+
+  }
+
+  &::before {
+    width: 0;
+    height: 0;
+    border-right: 25px solid #ff749f;
+    border-top: 27px solid transparent;
+    border-bottom: 27px solid transparent;
+    content: "";
+    position: absolute;
+    margin-left: -24px;
+  }
+  &::after {
+    width: 0;
+    height: 0;
+    border-left: 25px solid #ff749f;
+    border-bottom: 27px solid transparent;
+    border-top: 27px solid transparent;
+    content: "";
+    position: absolute;
+    margin-right: -24px;
+    right: 0;
+    margin-top: 0px;
+
+  }
+
+}

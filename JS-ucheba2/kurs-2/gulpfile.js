@@ -3,7 +3,6 @@
 let gulp = require('gulp'),
     watch = require('gulp-watch'),
     prefixer = require('gulp-autoprefixer'),
-    // uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     rigger = require('gulp-rigger'),
@@ -14,7 +13,9 @@ let gulp = require('gulp'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload,
     babel = require('gulp-babel'),
-    gbminify = require('gulp-babel-minify');
+    gbminify = require('gulp-babel-minify'),
+    gutil = require('gulp-util');
+
 
 let path = {
     build: {
@@ -54,7 +55,7 @@ let serverConfig = {
         baseDir: "./build"
     },
 
-    tunnel: true,
+    // tunnel: true,
     host: 'localhost',
     port: 9000,
     logPrefix: "Frontend"
@@ -73,7 +74,15 @@ gulp.task('js:build', function () {
     gulp.src(path.src.js)
         .pipe(rigger())
         .pipe(sourcemaps.init())
-        .pipe(babel())
+        .pipe(babel().on('error', function (err) {
+            let message = err.message;
+            let errName = err.name;
+            let codeFrame = err.codeFrame;
+            gutil.log(gutil.colors.red.bold('JavaScript ОШИБКА: ' + errName));
+            gutil.log(gutil.colors.red.bold(message));
+            gutil.log(gutil.colors.red.bold(codeFrame));
+            this.emit('end');
+            }))
         // .pipe(gbminify()) // для минимификации включить
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.js))
@@ -85,7 +94,15 @@ gulp.task('js:build', function () {
 gulp.task('style:build', function () {
     gulp.src(path.src.style)
         .pipe(sourcemaps.init())
-        .pipe(sass())
+        .pipe(sass().on('error', function (error) {
+            let fileName = error.file;
+            let message = error.messageOriginal;
+            let line = error.line;
+            let column = error.column;
+            gutil.log(gutil.colors.red.bold('SCSS ОШИБКА в строке: ' + line + ' столбец:' + column));
+            gutil.log(gutil.colors.red.bold(fileName));
+            gutil.log(gutil.colors.red.bold(message));
+        }))
         .pipe(prefixer())
         // .pipe(cssmin())  // для минимификации включить
         .pipe(sourcemaps.write())
@@ -109,11 +126,13 @@ gulp.task('image:build', function () {
 gulp.task('fonts:build', function () {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
+        .pipe(reload({stream: true}));
 });
 
 gulp.task('json:build', function () {
     gulp.src(path.src.json)
         .pipe(gulp.dest(path.build.json))
+        .pipe(reload({stream: true}));
 });
 
 
@@ -126,7 +145,7 @@ gulp.task('build', [
     'json:build'
 ]);
 
-gulp.task('watch', function(){
+gulp.task('watch', function () {
     gulp.watch(path.watch.style, ['style:build']);
     gulp.watch(path.watch.html, ['html:build']);
     gulp.watch(path.watch.js, ['js:build']);

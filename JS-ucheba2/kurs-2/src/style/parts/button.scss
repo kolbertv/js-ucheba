@@ -1,0 +1,12 @@
+.button {
+  box-shadow: none;
+  outline: none;
+  border-color: transparent;
+  border-style: none;
+  background-color: transparent;
+  transition-duration: 200ms;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
