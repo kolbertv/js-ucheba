@@ -11,22 +11,20 @@ window.onload = function () {
     let localCartStorageName = 'miniCart';
     let localCatalogStorageName = 'catalogData';
 
-    if (localShopStorage(localCartStorageName)) {
+    // localStorage.clear();
 
-        getJson('getBasket.json', data => miniCart.init(data, 'dropdownCart', localCartStorageName));
+    // getJson('getBasket.json', data => miniCart.init(data,localCartStorageName));
 
-        if (localShopStorage(localCatalogStorageName)) {
-            getJson('catalogData.json', data => loadCatalogData.init({
-                data,
-                localCatalogStorageName,
-                localCartStorageName
-            }));
-        } else {
+    miniCart.init();
 
-            console.log('ничего не работает');
 
-        }
-    }
+    getJson('catalogData.json', data => loadCatalogData.init({
+        data,
+        localCatalogStorageName,
+        localCartStorageName
+    }));
+
+
 };
 
 
