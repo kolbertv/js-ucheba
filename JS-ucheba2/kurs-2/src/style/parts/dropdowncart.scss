@@ -114,6 +114,18 @@
     background-color: #eee;
     margin-top: 10px;
     margin-left: 7px;
+    font-family: "Open Sans", sans-serif;
+
+
+
+    & a {
+      color: black;
+    }
+
+    & a:hover {
+
+      color: white;
+    }
 
     &:hover {
       background-color: $color_pink;

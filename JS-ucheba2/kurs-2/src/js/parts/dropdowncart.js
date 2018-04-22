@@ -134,7 +134,7 @@ let miniCart = {
 
             let button = `
                     <button class="button dropdownCart__button dropdownCart__button_mod" data-button_name="check">Оформить</button>
-                    <button class="button dropdownCart__button dropdownCart__button_mod" data-button_name="cart">Корзина</button>
+                    <button class="button dropdownCart__button dropdownCart__button_mod" data-button_name="cart"><a href="../bigcart.html">Корзина</a></button>
                     <button class="button dropdownCart__button dropdownCart__button_mod" data-button_name="clear">Очистить</button>
                     `;
 
