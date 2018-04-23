@@ -1,0 +1,81 @@
+.cart_collaterals {
+
+  $border_test: none;
+  //$border_test: 1px solid black;
+
+  border: $border_test;
+
+
+  height: 500px;
+  width: inherit;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  &__discount {
+    border:$border_test;
+    width: 49%;
+  }
+
+  &__cartTotals {
+    border:$border_test;
+    width: 49%;
+  }
+
+  &__h2 {
+    border-bottom: 1px solid #eaeaea;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 10px 0;
+    text-transform: uppercase;
+  }
+
+  &__inputCoupon {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 7px;
+  }
+
+  &__couponLabel {
+    font-size: 14px;
+  }
+
+  &__couponButton {
+    border: 1px solid #eaeaea;
+    padding: 7px 10px;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $color_pink;
+      color: white;
+    }
+  }
+
+  &__flex {
+    border: $border_test;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__col {
+    border: $border_test;
+    width: 200px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  &__checkout {
+    border: 1px solid #eaeaea;
+    padding: 7px 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    &:hover {
+      background-color: $color_pink;
+      color: white;
+    }
+
+  }
+
+}

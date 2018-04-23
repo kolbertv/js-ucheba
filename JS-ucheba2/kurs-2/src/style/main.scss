@@ -11,10 +11,16 @@ $border_test: none;
 //$border_test: 1px solid black;
 $width_1200: 1090px;
 
+
+*:not(i) {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+
 html, body, p, a {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
 
   a {
@@ -45,6 +51,9 @@ html, body, p, a {
 @import "parts/dropdowncart.scss";
 @import "parts/catalog.scss";
 @import "parts/nav.scss";
+@import "parts/bigcartcontent.scss";
+
+
 
 
 

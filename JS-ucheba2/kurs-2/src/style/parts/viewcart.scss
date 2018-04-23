@@ -1,0 +1,129 @@
+.cart_container {
+  $indexWidth: 10px;
+  $imageWidth: 100px;
+  $nameWidth: 400px;
+  $priceWidth: 110px;
+  $qtyWidth: 130px;
+  $subtotalWidth: 140px;
+  $deleteWidth: 50px;
+  $border_test: none;
+  //$border_test: 1px black solid;
+
+  &__img {
+    height: 70px;
+  }
+
+  &__buttonDelete {
+    border: 1px #d1d1d1 solid;
+    height: 35px;
+    width: 40px;
+
+
+    &::before {
+      font-family: FontAwesome;
+      content: "\f014";
+      font-size: 16px;
+    }
+
+    &:hover {
+      background-color: $color_pink;
+      color: white;
+    }
+
+  }
+
+  &__qtyInput {
+
+    width: 45px;
+    //height: 40px;
+    padding: 5px 5px;
+    font-size: 16px;
+    text-align: center;
+
+  }
+
+  &__h2 {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    text-transform: uppercase;
+  }
+
+  &__header {
+    background-color: #f7f7f7;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+
+  &__row {
+    display: flex;
+    border: $border_test;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
+  }
+
+  &__column {
+    border: $border_test;
+    padding: 9px 12px;
+    white-space: nowrap;
+  }
+
+
+  &__index {
+    width: $indexWidth;
+  }
+  &__image {
+    width: $imageWidth;
+  }
+  &__name {
+    width: $nameWidth;
+  }
+  &__price {
+    width: $priceWidth;
+  }
+  &__qty {
+    width: $qtyWidth;
+  }
+  &__subtotal {
+    width: $subtotalWidth;
+  }
+  &__delete {
+    width: $deleteWidth;
+  }
+
+ &__itemWrapper {
+   //padding: 25px 0;
+ }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__emptySpace {
+    flex-grow: 1;
+  }
+
+  &__footerButton {
+    display: block;
+    color: black;
+    font-size: 13px;
+    border: 1px #d1d1d1 solid;
+    padding: 7px 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    text-transform: uppercase;
+
+
+    &:hover {
+      background-color: $color_pink;
+      color: white;
+    }
+
+  }
+
+}
