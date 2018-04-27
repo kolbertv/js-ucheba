@@ -54,9 +54,14 @@
   }
 
   &__flex {
-    border: $border_test;
+
     display: flex;
+
+  }
+
+  &__row {
     margin-bottom: 10px;
+    border: $border_test;
   }
 
   &__col {
