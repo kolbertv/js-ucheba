@@ -21,3 +21,21 @@ function getJson(jsonFile, callback) {
     };
     xhr.send();
 }
+
+function getJsonFetch(jsonFile, callback) {
+
+   fetch('json/' + jsonFile)
+       .then(response => response.text())
+       .then(text => {
+           console.log(text)
+       }).catch(error => {
+           console.log(error)
+   })
+}
+
+getJsonFetch('../json/' + 'getBasket.json');
+getJson('../json/' + 'getBasket.json', consoleL);
+
+function consoleL(err) {
+    console.log(err)
+}
